@@ -327,3 +327,5 @@ btn2 = ttk.Button(root_main, text="Eesti", command=est)
 btn2.place(x=70, y=60, width=110)
 
 root_main.mainloop() #Cycle end
+
+#
