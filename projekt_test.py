@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import ttk, messagebox, scrolledtext
 import random
 from quiz_data import quiz_data
 from quiz_data import quiz_data2
@@ -27,6 +27,44 @@ def back_to_main(current_window):
 def back_to_previous(current_window, previous_window):
     current_window.withdraw() #Hiding the window, but not destroying it
     previous_window.deiconify() #Showing the hidden window
+
+# Function to load text from file and split it into sections
+def load_text(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        text = file.read()
+    sections = text.split('---')  # Разделяем текст на секции с помощью '---'
+    return sections
+
+def open_window(current_window, text, image_path, next_text=None, next_image_path=None):
+    current_window.withdraw()
+    new_window = tk.Toplevel(current_window)
+    new_window.title("Teooria")
+    new_window.geometry("1000x1000")
+
+    text_widget = scrolledtext.ScrolledText(new_window, wrap=tk.WORD)
+    text_widget.pack(expand=True, fill='both')
+
+    text_widget.insert(tk.END, text)
+
+    image = Image.open(resource_path(image_path))
+    resize_image = image.resize((350, 250))
+    img = ImageTk.PhotoImage(resize_image)
+    new_window.image = img
+
+    label1 = tk.Label(new_window, image=img)
+    text_widget.insert("20.0", "\t" * 2)
+    text_widget.window_create("20.10", window=label1)
+
+    btn_back = ttk.Button(new_window, text="Tagasi", command=lambda: back_to_previous(new_window, current_window))
+    text_widget.insert("50.0", "\t" * 5)
+    text_widget.window_create("50.5", window=btn_back)
+
+    if next_text and next_image_path:
+        btn_next = ttk.Button(new_window, text="Edasi", command=lambda: open_window(new_window, next_text, next_image_path))
+        text_widget.insert("50.0", "\t" * 15)
+        text_widget.window_create("50.10", window=btn_next)
+
+    text_widget.configure(state="disabled")
 
 #Function for window where is possible to choose between theory and test
 def rus():
@@ -175,37 +213,13 @@ def all_rus(gamesc4):
 
 #Function for a theory window
 def theory_est(gamesc2):
-    gamesc2.withdraw()
-    gamesc6 = tk.Toplevel(gamesc2)
-    gamesc6.title("Teooria")
-    gamesc6.geometry("1000x1000")
 
-    btn_back = ttk.Button(gamesc6, text="Tagasi", command=lambda: back_to_previous(gamesc6, gamesc2))
-    btn_back.place(x=70, y=500, width=110)
+    sections = load_text(resource_path('text.txt'))
+    images = ["14käänet.png", "14käänet2.png"]  # Добавьте сюда все пути к изображениям
+    if sections and images:
+        gamesc2.withdraw()
+        open_window(gamesc2, sections[0], images[0], sections[1] if len(sections) > 1 else None, images[1] if len(images) > 1 else None)
 
-    #Read a text from file
-    with open(resource_path('text.txt'), encoding='utf-8') as file:
-        text = file.read()
-
-    #Read and resize an image
-    image = Image.open(resource_path("14käänet.png"))
-    resize_image = image.resize((350, 250))
-
-    #Create an ImageTk object for display in Tkinter
-    img = ImageTk.PhotoImage(resize_image)
-
-    gamesc6.image = img
-
-    #Create a label for an image
-    label1 = tk.Label(gamesc6, image=img)
-
-    #Create a label for a text
-    text_label = tk.Label(gamesc6, text=text, wraplength=700, justify=tk.LEFT)
-    text_label2 = tk.Label(gamesc6, text=text, wraplength=700, justify=tk.LEFT)
-
-    label1.place(x=50, y=50)
-    text_label.place(x=420, y=50)
-    text_label2.place(x=50, y=300)
 
 #Function for a test window
 def test_est(gamesc2):
@@ -327,5 +341,3 @@ btn2 = ttk.Button(root_main, text="Eesti", command=est)
 btn2.place(x=70, y=60, width=110)
 
 root_main.mainloop() #Cycle end
-
-#
