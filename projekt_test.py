@@ -116,7 +116,7 @@ def est():
 def theory_rus(gamesc):
     global sections, images, image_sizes, image_coords
     sections = load_text(resource_path('text_rus.txt'))
-    images = ["tabel_rus.png", "nimisona.png"]  # Добавьте сюда все пути к изображениям
+    images = ["tabel_rus.png", "nimisona.png"]  
     image_sizes = [(350, 250), (600, 300)]
     image_coords = ["20.10", "30.15"]
     if sections and images and image_sizes and image_coords:
@@ -232,7 +232,7 @@ def theory_est(gamesc2):
 
     global sections, images, image_sizes, image_coords
     sections = load_text(resource_path('text.txt'))
-    images = ["14käänet.png", "14käänet2.png", "mitmus.png"]  # Добавьте сюда все пути к изображениям
+    images = ["14käänet.png", "14käänet2.png", "mitmus.png"]  
     image_sizes = [(350, 250), (600, 300), (350, 250)]
     image_coords = ["20.10", "30.15", "40.20"]
     if sections and images and image_sizes and image_coords:
