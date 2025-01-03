@@ -367,3 +367,4 @@ btn2.place(x=70, y=60, width=110)
 root_main.mainloop() #Cycle end
 
 #
+#
