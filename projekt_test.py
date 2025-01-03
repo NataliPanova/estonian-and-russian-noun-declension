@@ -32,15 +32,24 @@ def back_to_previous(current_window, previous_window):
 
 
 # List of text filenames for each window
-text_files = ['test.txt', 'text.txt', 'text_rus.txt']  # Add more filenames as needed
+text_files_est = ['test.txt', 'text.txt', 'text_rus.txt']  # Add more filenames as needed
 
-image_params = [ [{'file': '14käänet.png', 'coords': (200, 70), 'size': (350, 250)}, {'file': '14käänet2.png', 'coords': (420, 420), 'size': (450, 250)}],
+image_params_est = [ [{'file': '14käänet.png', 'coords': (200, 70), 'size': (350, 250)}, {'file': '14käänet2.png', 'coords': (420, 420), 'size': (450, 250)}],
                [{'file': 'tabel_rus.png', 'coords': (50, 300), 'size': (300, 200)}, {'file': 'mitmus.png', 'coords': (420, 300), 'size': (250, 200)}],
                [{'file': 'nimisona.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
             ]
 
+text_files_rus = ['text.txt', 'test.txt', 'text_rus.txt']  # Add more filenames as needed
 
-def create_window(previous_window, index):
+image_params_rus = [ [{'file': '14käänet2.png', 'coords': (200, 70), 'size': (350, 250)}, {'file': '14käänet.png', 'coords': (420, 420), 'size': (450, 250)}],
+               [{'file': 'nimisona.png', 'coords': (50, 300), 'size': (300, 200)}, {'file': 'mitmus.png', 'coords': (420, 300), 'size': (250, 200)}],
+               [{'file': 'nimisona.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
+            ]
+
+
+
+
+def create_window(previous_window, index, text_files, image_params):
     if index >= len(text_files):
         return  # If no more text files, stop creating new windows
 
@@ -54,7 +63,7 @@ def create_window(previous_window, index):
     btn_back.place(x=390, y=20, width=110)
 
     if index < len(text_files) - 1:
-        btn_next = ttk.Button(new_window, text="Järgmine", command=lambda: create_window(new_window, index + 1))
+        btn_next = ttk.Button(new_window, text="Järgmine", command=lambda: create_window(new_window, index + 1, text_files, image_params))
         btn_next.place(x=500, y=20, width=110)
 
     # Read and process text from the corresponding file
@@ -91,6 +100,8 @@ def create_window(previous_window, index):
             y_position += 50
 
 
+
+
 #Function for window where is possible to choose between theory and test
 def rus():
     root_main.withdraw() #Hiding the main window, but not destroying it
@@ -123,14 +134,10 @@ def est():
     btn_back.place(x=70, y=140, width=110) #Button place
 
 #Function for a theory window
-def theory_rus(gamesc):
-    gamesc.withdraw() #Hiding the main window, but not destroying it
-    gamesc3 = tk.Toplevel(gamesc)
-    gamesc3.title("Teooria")
-    gamesc3.geometry("250x200")
 
-    btn_back = ttk.Button(gamesc3, text="Tagasi", command=lambda: back_to_previous(gamesc3, gamesc))
-    btn_back.place(x=70, y=100, width=110)
+def theory_rus(gamesc):
+    gamesc.withdraw()  # Hide the main window, but not destroy it
+    create_window(gamesc, 0, text_files_rus, image_params_rus)
 
 #Function for a test window
 def test_rus(gamesc):
@@ -239,7 +246,7 @@ def all_rus(gamesc4):
 #Function for a theory window
 def theory_est(gamesc2):
     gamesc2.withdraw()
-    create_window(gamesc2, 0)
+    create_window(gamesc2, 0, text_files_est, image_params_est)
 
 #Function for a test window
 def test_est(gamesc2):
@@ -362,4 +369,3 @@ btn2.place(x=70, y=60, width=110)
 
 root_main.mainloop() #Cycle end
 
-#
