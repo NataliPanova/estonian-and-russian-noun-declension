@@ -5,7 +5,7 @@ from quiz_data import quiz_data
 from quiz_data import quiz_data2
 from PIL import Image, ImageTk
 import os
-import sys
+#import sys
 
 #Function to get the path
 def resource_path(relative_path):
@@ -29,21 +29,19 @@ def back_to_previous(current_window, previous_window):
 
 
 # List of text filenames for each window
-text_files_est = ['test.txt', 'text.txt', 'text_rus.txt']  # Add more filenames as needed
+text_files_est = ['test.txt', 'text.txt', 'text1_rus.txt']  # Add more filenames as needed
 
 image_params_est = [ [{'file': '14käänet.png', 'coords': (200, 70), 'size': (350, 250)}, {'file': '14käänet2.png', 'coords': (420, 420), 'size': (450, 250)}],
-               [{'file': 'tabel_rus.png', 'coords': (50, 300), 'size': (300, 200)}, {'file': 'mitmus.png', 'coords': (420, 300), 'size': (250, 200)}],
-               [{'file': 'nimisona.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
+               [{'file': 'tabel1_rus.png', 'coords': (50, 300), 'size': (300, 200)}, {'file': 'mitmus.png', 'coords': (420, 300), 'size': (250, 200)}],
+               [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
             ]
 
-text_files_rus = ['text.txt', 'test.txt', 'text_rus.txt']  # Add more filenames as needed
+text_files_rus = ['text1_rus.txt', 'test.txt', 'text.txt']  # Add more filenames as needed
 
-image_params_rus = [ [{'file': '14käänet2.png', 'coords': (200, 70), 'size': (350, 250)}, {'file': '14käänet.png', 'coords': (420, 420), 'size': (450, 250)}],
-               [{'file': 'nimisona.png', 'coords': (50, 300), 'size': (300, 200)}, {'file': 'mitmus.png', 'coords': (420, 300), 'size': (250, 200)}],
-               [{'file': 'nimisona.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
+image_params_rus = [ [{'file': 'tabel1_rus.png', 'coords': (50, 100), 'size': (550, 450)}, {'file': 'sugu_rus.png', 'coords': (50, 620), 'size': (620, 420)}],
+               [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (300, 200)}, {'file': 'mitmus.png', 'coords': (420, 300), 'size': (250, 200)}],
+               [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
             ]
-
-
 
 
 def create_window(previous_window, index, text_files, image_params):
@@ -63,38 +61,53 @@ def create_window(previous_window, index, text_files, image_params):
         btn_next = ttk.Button(new_window, text="Järgmine", command=lambda: create_window(new_window, index + 1, text_files, image_params))
         btn_next.place(x=500, y=20, width=110)
 
-    # Read and process text from the corresponding file
+    frame = ttk.Frame(new_window)
+    frame.place(x=50, y=50, width=900, height=900)
+
+    canvas = tk.Canvas(frame)
+    scrollbar = ttk.Scrollbar(frame, orient="vertical", command=canvas.yview)
+    scrollable_frame = ttk.Frame(canvas)
+
+    scrollable_frame.bind("<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
+
+    canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+    canvas.configure(yscrollcommand=scrollbar.set)
+
+    canvas.pack(side="left", fill="both", expand=True)
+    scrollbar.pack(side="right", fill="y")
+
+    def on_mouse_wheel(event):
+        canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+
+    canvas.bind_all("<MouseWheel>", on_mouse_wheel)
+
     with open(resource_path(text_files[index]), encoding='utf-8') as file:
         content = file.read()
 
     parts = content.split('[[IMG')  # Split the text at markers
 
-    y_position = 50  # Initial y-position for text
-
     for i, part in enumerate(parts):
         if i == 0:
-            label = tk.Label(new_window, text=part.strip(), wraplength=700, justify=tk.LEFT)
-            label.place(x=50, y=y_position)
-            y_position += 50
+            label = tk.Label(scrollable_frame, text=part.strip(), wraplength=700, justify=tk.LEFT)
+            label.pack(anchor="w", pady=10)
         else:
             marker, text = part.split(']]', 1)
             img_index = int(marker) - 1
 
             # Load and display the image
-            img_info = image_params[index][img_index]
-            image = Image.open(resource_path(img_info['file']))
-            resize_image = image.resize(img_info['size'])  # Resize as needed
-            img = ImageTk.PhotoImage(resize_image)
+            if img_index < len(image_params[index]):  # Check if img_index is within range
+                img_info = image_params[index][img_index]
+                image = Image.open(resource_path(img_info['file']))
+                resize_image = image.resize(img_info['size'])  # Resize as needed
+                img = ImageTk.PhotoImage(resize_image)
 
-            img_label = tk.Label(new_window, image=img)
-            img_label.image = img  # Keep a reference to avoid garbage collection
-            img_label.place(x=img_info['coords'][0], y=img_info['coords'][1])
-            y_position = img_info['coords'][1] + img_info['size'][1] + 50
+                img_label = tk.Label(scrollable_frame, image=img)
+                img_label.image = img  # Keep a reference to avoid garbage collection
+                img_label.pack(anchor="w", pady=10)
 
             # Display the text after the image
-            label = tk.Label(new_window, text=text.strip(), wraplength=700, justify=tk.LEFT)
-            label.place(x=50, y=y_position)
-            y_position += 50
+            label = tk.Label(scrollable_frame, text=text.strip(), wraplength=700, justify=tk.LEFT)
+            label.pack(anchor="w", pady=10)
 
 
 
