@@ -15,6 +15,12 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
 
+def load_text(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        text = file.read()
+    sections = text.split('---')
+    return sections
+
 root_main = tk.Tk()
 root_main.title("Käänded")
 root_main.geometry("250x200")
@@ -27,69 +33,6 @@ def back_to_main(current_window):
 def back_to_previous(current_window, previous_window):
     current_window.withdraw() #Hiding the window, but not destroying it
     previous_window.deiconify() #Showing the hidden window
-
-
-
-
-# List of text filenames for each window
-text_files = ['test.txt', 'text.txt', 'text_rus.txt']  # Add more filenames as needed
-
-image_params = [ [{'file': '14käänet.png', 'coords': (200, 70), 'size': (350, 250)}, {'file': '14käänet2.png', 'coords': (420, 420), 'size': (450, 250)}],
-               [{'file': 'tabel_rus.png', 'coords': (50, 300), 'size': (300, 200)}, {'file': 'mitmus.png', 'coords': (420, 300), 'size': (250, 200)}],
-               [{'file': 'nimisona.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
-            ]
-
-
-def create_window(previous_window, index):
-    if index >= len(text_files):
-        return  # If no more text files, stop creating new windows
-
-    previous_window.withdraw()  # Hide the previous window
-
-    new_window = tk.Toplevel(previous_window)
-    new_window.title(f"Teooria - Aken {index + 1}")
-    new_window.geometry("1000x1000")
-
-    btn_back = ttk.Button(new_window, text="Tagasi", command=lambda: back_to_previous(new_window, previous_window))
-    btn_back.place(x=390, y=20, width=110)
-
-    if index < len(text_files) - 1:
-        btn_next = ttk.Button(new_window, text="Järgmine", command=lambda: create_window(new_window, index + 1))
-        btn_next.place(x=500, y=20, width=110)
-
-    # Read and process text from the corresponding file
-    with open(resource_path(text_files[index]), encoding='utf-8') as file:
-        content = file.read()
-
-    parts = content.split('[[IMG')  # Split the text at markers
-
-    y_position = 50  # Initial y-position for text
-
-    for i, part in enumerate(parts):
-        if i == 0:
-            label = tk.Label(new_window, text=part.strip(), wraplength=700, justify=tk.LEFT)
-            label.place(x=50, y=y_position)
-            y_position += 50
-        else:
-            marker, text = part.split(']]', 1)
-            img_index = int(marker) - 1
-
-            # Load and display the image
-            img_info = image_params[index][img_index]
-            image = Image.open(resource_path(img_info['file']))
-            resize_image = image.resize(img_info['size'])  # Resize as needed
-            img = ImageTk.PhotoImage(resize_image)
-
-            img_label = tk.Label(new_window, image=img)
-            img_label.image = img  # Keep a reference to avoid garbage collection
-            img_label.place(x=img_info['coords'][0], y=img_info['coords'][1])
-            y_position = img_info['coords'][1] + img_info['size'][1] + 50
-
-            # Display the text after the image
-            label = tk.Label(new_window, text=text.strip(), wraplength=700, justify=tk.LEFT)
-            label.place(x=50, y=y_position)
-            y_position += 50
-
 
 #Function for window where is possible to choose between theory and test
 def rus():
@@ -113,7 +56,7 @@ def est():
     gamesc2.title("Eesti")
     gamesc2.geometry("250x200")
 
-    btn_theory = ttk.Button(gamesc2, text="Õppematerjalid", command=lambda: theory_est(gamesc2)) #Button for moving to the theory window
+    btn_theory = ttk.Button(gamesc2, text="Õppematerjalid", command=lambda: theory_sequence(gamesc2, 0)) #Button for moving to the theory window
     btn_theory.place(x=70, y=60, width=110) #Button place
 
     btn_test = ttk.Button(gamesc2, text="Test", command=lambda: test_est(gamesc2)) #Button to move for a test window
@@ -237,9 +180,55 @@ def all_rus(gamesc4):
     btn_back.place(x=243.5, y=500, width=110)
 
 #Function for a theory window
-def theory_est(gamesc2):
-    gamesc2.withdraw()
-    create_window(gamesc2, 0)
+
+def show_content(previous_window, text, image_path, next_command=None, previous_window_main=None):
+    previous_window.withdraw()
+    new_window = tk.Toplevel(previous_window)
+    new_window.geometry("1000x1000")
+
+    btn_back = ttk.Button(new_window, text="Tagasi", command=lambda: back_to_previous(new_window, previous_window))
+    btn_back.place(x=70, y=500, width=110)
+
+    if next_command:
+        btn_next = ttk.Button(new_window, text="Edasi", command=next_command)
+        btn_next.place(x=200, y=500, width=110)
+
+    text_label = tk.Label(new_window, text=text, wraplength=700, justify=tk.LEFT)
+    text_label.place(x=420, y=50)
+
+    image = Image.open(resource_path(image_path))
+    resized_image = image.resize((350, 250))
+    img = ImageTk.PhotoImage(resized_image)
+    new_window.image = img
+
+    label1 = tk.Label(new_window, image=img)
+    label1.place(x=50, y=50)
+
+def theory_sequence(previous_window, index):
+    text_file = 'text.txt'  # Single text file
+    images = ['14käänet.png', '14käänet2.png', 'tabel_rus.png']  # Add as many image files as needed
+
+    with open(resource_path(text_file), encoding='utf-8') as file:
+        full_text = file.read()
+
+    # Divide the text into parts
+    text_parts = full_text.split('\n\n')  # Split the text by double newline
+
+    if index < len(text_parts):
+        text = text_parts[index]
+        show_content(previous_window, text, images[index % len(images)], next_command=lambda: theory_sequence(previous_window, index + 1), previous_window_main=root_main)
+    else:
+        previous_window.deiconify()
+
+
+
+
+
+
+
+
+
+
 
 #Function for a test window
 def test_est(gamesc2):
@@ -362,3 +351,4 @@ btn2.place(x=70, y=60, width=110)
 
 root_main.mainloop() #Cycle end
 
+#
