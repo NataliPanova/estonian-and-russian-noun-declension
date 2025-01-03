@@ -14,7 +14,7 @@ def resource_path(relative_path):
 
 root_main = tk.Tk()
 root_main.title("Käänded")
-root_main.geometry("250x200")
+root_main.geometry("250x200+100+100")
 
 def back_to_main(current_window):
     current_window.withdraw() #Hiding the window, but not destroying it
@@ -52,7 +52,7 @@ def create_window(previous_window, index, text_files, image_params):
 
     new_window = tk.Toplevel(previous_window)
     new_window.title(f"Teooria - Aken {index + 1}")
-    new_window.geometry("1000x1000")
+    new_window.geometry("1000x1000+100+100")
 
     btn_back = ttk.Button(new_window, text="Tagasi", command=lambda: back_to_previous(new_window, previous_window))
     btn_back.place(x=390, y=20, width=110)
@@ -117,7 +117,7 @@ def rus():
     root_main.withdraw() #Hiding the main window, but not destroying it
     gamesc = tk.Toplevel(root_main) #Create a window on top
     gamesc.title("Vene") #New window's name
-    gamesc.geometry("250x200") #New window's size
+    gamesc.geometry("250x200+100+100") #New window's size
 
     btn_theory = ttk.Button(gamesc, text="Õppematerjalid", command=lambda: theory_rus(gamesc))
     btn_theory.place(x=70, y=60, width=110)
@@ -132,7 +132,7 @@ def est():
     root_main.withdraw() #Hiding the main window, but not destroying it
     gamesc2 = tk.Toplevel(root_main)
     gamesc2.title("Eesti")
-    gamesc2.geometry("250x200")
+    gamesc2.geometry("250x200+100+100")
 
     btn_theory = ttk.Button(gamesc2, text="Õppematerjalid", command=lambda: theory_est(gamesc2)) #Button for moving to the theory window
     btn_theory.place(x=70, y=60, width=110) #Button place
@@ -154,7 +154,7 @@ def test_rus(gamesc):
     gamesc.withdraw()
     gamesc4 = tk.Toplevel(gamesc)
     gamesc4.title("Test")
-    gamesc4.geometry("250x200")
+    gamesc4.geometry("250x200+100+100")
 
     btn_next = ttk.Button(gamesc4, text="Kõik käänded", command=lambda: all_rus(gamesc4))
     btn_next.place(x=70, y=60, width=110)
@@ -167,7 +167,7 @@ def all_rus(gamesc4):
     gamesc4.withdraw()
     gamesc5 = tk.Toplevel(gamesc4)
     gamesc5.title("Test")
-    gamesc5.geometry("600x600")
+    gamesc5.geometry("600x600+100+100")
 
     #Initializing variables
     score = 0
@@ -263,7 +263,7 @@ def test_est(gamesc2):
     gamesc2.withdraw()
     gamesc7 = tk.Toplevel(gamesc2)
     gamesc7.title("Test")
-    gamesc7.geometry("250x200")
+    gamesc7.geometry("250x200+100+100")
 
     btn_next = ttk.Button(gamesc7, text="Kõik käänded", command=lambda: all_est(gamesc7))
     btn_next.place(x=70, y=60, width=110)
@@ -276,7 +276,7 @@ def all_est(gamesc7):
     gamesc7.withdraw()
     gamesc8 = tk.Toplevel(gamesc7)
     gamesc8.title("Test")
-    gamesc8.geometry("600x600")
+    gamesc8.geometry("600x600+100+100")
 
     score2 = 0
     current_question2 = 0
