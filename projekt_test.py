@@ -1,18 +1,11 @@
 import tkinter as tk
-from tkinter import ttk, messagebox, scrolledtext
+from tkinter import ttk, messagebox
 import random
 from quiz_data import quiz_data
 from quiz_data import quiz_data2
 from PIL import Image, ImageTk
 import os
 import sys
-
-
-sections = []
-images = []
-image_sizes = []
-image_coords = []
-
 
 #Function to get the path
 def resource_path(relative_path):
@@ -35,53 +28,71 @@ def back_to_previous(current_window, previous_window):
     current_window.withdraw() #Hiding the window, but not destroying it
     previous_window.deiconify() #Showing the hidden window
 
-# Function to load text from file and split it into sections
-def load_text(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        text = file.read()
-    sections = text.split('---')
-    return sections
 
-def open_window(current_window, index):
-    global sections, images, image_sizes, image_coords
-    current_window.withdraw()
-    new_window = tk.Toplevel(current_window)
-    new_window.title("Teooria")
+
+
+# List of text filenames for each window
+text_files = ['test.txt', 'text.txt', 'text_rus.txt']  # Add more filenames as needed
+
+image_params = [ [{'file': '14käänet.png', 'coords': (200, 70), 'size': (350, 250)}, {'file': '14käänet2.png', 'coords': (420, 420), 'size': (450, 250)}],
+               [{'file': 'tabel_rus.png', 'coords': (50, 300), 'size': (300, 200)}, {'file': 'mitmus.png', 'coords': (420, 300), 'size': (250, 200)}],
+               [{'file': 'nimisona.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
+            ]
+
+
+def create_window(previous_window, index):
+    if index >= len(text_files):
+        return  # If no more text files, stop creating new windows
+
+    previous_window.withdraw()  # Hide the previous window
+
+    new_window = tk.Toplevel(previous_window)
+    new_window.title(f"Teooria - Aken {index + 1}")
     new_window.geometry("1000x1000")
 
-    text_widget = scrolledtext.ScrolledText(new_window, wrap=tk.WORD)
-    text_widget.pack(expand=True, fill='both')
+    btn_back = ttk.Button(new_window, text="Tagasi", command=lambda: back_to_previous(new_window, previous_window))
+    btn_back.place(x=390, y=20, width=110)
 
-    text_widget.insert(tk.END, sections[index])
+    if index < len(text_files) - 1:
+        btn_next = ttk.Button(new_window, text="Järgmine", command=lambda: create_window(new_window, index + 1))
+        btn_next.place(x=500, y=20, width=110)
 
-    if index < len(images):
-        image = Image.open(resource_path(images[index]))
-        resize_image = image.resize(image_sizes[index])
-        img = ImageTk.PhotoImage(resize_image)
-        new_window.image = img
+    # Read and process text from the corresponding file
+    with open(resource_path(text_files[index]), encoding='utf-8') as file:
+        content = file.read()
 
-        label1 = tk.Label(new_window, image=img)
-        text_widget.insert(image_coords[index], "\t" * 2)
-        text_widget.window_create(image_coords[index], window=label1)
+    parts = content.split('[[IMG')  # Split the text at markers
 
-    btn_back = ttk.Button(new_window, text="Tagasi", command=lambda: back_to_previous(new_window, current_window))
-    text_widget.insert("50.0", "\t" * 5)
-    text_widget.window_create("50.5", window=btn_back)
+    y_position = 50  # Initial y-position for text
 
-    if index + 1 < len(sections):
-        btn_next = ttk.Button(new_window, text="Edasi", command=lambda: open_window(new_window, index + 1))
-        text_widget.insert("50.0", "\t" * 15)
-        text_widget.window_create("50.10", window=btn_next)
+    for i, part in enumerate(parts):
+        if i == 0:
+            label = tk.Label(new_window, text=part.strip(), wraplength=700, justify=tk.LEFT)
+            label.place(x=50, y=y_position)
+            y_position += 50
+        else:
+            marker, text = part.split(']]', 1)
+            img_index = int(marker) - 1
 
-    else:
-        text_widget.insert("50.0", "\t" * 15)
+            # Load and display the image
+            img_info = image_params[index][img_index]
+            image = Image.open(resource_path(img_info['file']))
+            resize_image = image.resize(img_info['size'])  # Resize as needed
+            img = ImageTk.PhotoImage(resize_image)
 
-    text_widget.configure(state="disabled")
+            img_label = tk.Label(new_window, image=img)
+            img_label.image = img  # Keep a reference to avoid garbage collection
+            img_label.place(x=img_info['coords'][0], y=img_info['coords'][1])
+            y_position = img_info['coords'][1] + img_info['size'][1] + 50
+
+            # Display the text after the image
+            label = tk.Label(new_window, text=text.strip(), wraplength=700, justify=tk.LEFT)
+            label.place(x=50, y=y_position)
+            y_position += 50
 
 
 #Function for window where is possible to choose between theory and test
 def rus():
-    global sections, images, image_sizes, image_coords
     root_main.withdraw() #Hiding the main window, but not destroying it
     gamesc = tk.Toplevel(root_main) #Create a window on top
     gamesc.title("Vene") #New window's name
@@ -97,7 +108,6 @@ def rus():
     btn_back.place(x=70, y=140, width=110)
 
 def est():
-    global sections, images, image_sizes, image_coords
     root_main.withdraw() #Hiding the main window, but not destroying it
     gamesc2 = tk.Toplevel(root_main)
     gamesc2.title("Eesti")
@@ -114,14 +124,13 @@ def est():
 
 #Function for a theory window
 def theory_rus(gamesc):
-    global sections, images, image_sizes, image_coords
-    sections = load_text(resource_path('text_rus.txt'))
-    images = ["tabel_rus.png", "nimisona.png"]  # Добавьте сюда все пути к изображениям
-    image_sizes = [(350, 250), (600, 300)]
-    image_coords = ["20.10", "30.15"]
-    if sections and images and image_sizes and image_coords:
-        gamesc.withdraw()
-        open_window(gamesc, 0)
+    gamesc.withdraw() #Hiding the main window, but not destroying it
+    gamesc3 = tk.Toplevel(gamesc)
+    gamesc3.title("Teooria")
+    gamesc3.geometry("250x200")
+
+    btn_back = ttk.Button(gamesc3, text="Tagasi", command=lambda: back_to_previous(gamesc3, gamesc))
+    btn_back.place(x=70, y=100, width=110)
 
 #Function for a test window
 def test_rus(gamesc):
@@ -229,16 +238,8 @@ def all_rus(gamesc4):
 
 #Function for a theory window
 def theory_est(gamesc2):
-
-    global sections, images, image_sizes, image_coords
-    sections = load_text(resource_path('text.txt'))
-    images = ["14käänet.png", "14käänet2.png", "mitmus.png"]  # Добавьте сюда все пути к изображениям
-    image_sizes = [(350, 250), (600, 300), (350, 250)]
-    image_coords = ["20.10", "30.15", "40.20"]
-    if sections and images and image_sizes and image_coords:
-        gamesc2.withdraw()
-        open_window(gamesc2, 0)
-
+    gamesc2.withdraw()
+    create_window(gamesc2, 0)
 
 #Function for a test window
 def test_est(gamesc2):
@@ -360,3 +361,5 @@ btn2 = ttk.Button(root_main, text="Eesti", command=est)
 btn2.place(x=70, y=60, width=110)
 
 root_main.mainloop() #Cycle end
+
+#
