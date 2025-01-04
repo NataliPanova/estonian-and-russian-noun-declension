@@ -14,5 +14,88 @@ Sootunnuseks on üldjuhul sõnalõpp.
 
 [[IMG2]]
 
+Mitmuse moodustamine
+
+---Meessoost nimisõna---
+* Kui nimisõna lõpeb kaashäälikuga, siis mitmuse vormi moodustamisel lõppu lisandub - Ы.
+магазин - магазины
+универмаг - универмаги
+* Kui meessoost nimisõna lõpu viimane täht on Г, К, Х, Ш, Щ, Ч, Ж, siis lõppu lisandub - И.
+* Kui meessoost nimisõna viimane täht Ь või Й, siis mitmuse vormi moodustamisel nad kaovad ära ja lõppu tuleb - И.
+
+музей - музеи
+рубль - рубли
+
+Erandid!
+Эстонец - эстонцы           Пирожок - пирожки
+Огурец - огурцы             Учитель - учителя
+Палец - пальцы              Лагерь - лагеря
+Заяц - зайцы                Гражданин - граждане
+Листок - листки             Англичанин - англичане
+
+Mõnede meessoost nimisõnade mitmuse nimetava lõpp on - A (alati röhuline):
+
+Дом - дома                  Шофер - шофера
+Голос - голоса              Адрес - адреса
+Паспорт - паспорта          Цвет - цвета
+Поезд - поезда              Лес - леса
+Номер - номера              Директор - директора
+Мастер - мастера            Остров - острова
+Город - города              Профессор - профессора
+Глаз - глаза
+
+Mõnede meessoost nimisõnade mitmuse nimetava lopp on - b:
+Друг - друзья               Брат - братья
+Сын - сыновья               Стул - стулья
+Муж - мужья                 Лист - листья
+
+Erandid!
+Человек - люди              День - дни
+Ребёнок - дети              Сон - сны
+
+---Naissoost nimisõna---
+* Kui naissoost nimisõna lõpeb А tähega, siis mitmuse vormi moodustamisel see А muutub Ы-ks: школа - школы
+* Kui naissoost nimisõna lõpeb A tähega ja A ees on Г, K, X, Ш, Ш, Ч, Ж, siis A muutub -И-ks: рука - руки
+* Kui naissoost nimisõna lõpus on Я või Ь, siis mitmuse vormi moodustamisel nad muutuvad - И- ks: тётя-тёти
+
+Erandid!
+Сестра-сёстры, мать-матери, дочь-дочери
+
+---Kesksoost nimisõna---
+*Kui kesksoost nimisõna lõpeb O-ga, siis mitmuse vormi moodustamisel see O muutub A-ks: окно - окна,
+слово - слова, дело - дела
+*Kui kesksoost nimisõna lõpeb Е-ga, siis Е muutub Я-ks: море -моря, упражнение - упражнения
+
+Erandid!
+Время - времена             Колено - колени
+Имя - имена                 Чудо - чудеса
+Дерево - деревья            Небо - небеса
+Ухо - уши                   ! Животное - животные
+Яблоко - яблоки             ! Пирожное - пирожные
+Плечо - плечи               ! Насекомое - насекомые
+
+
+[[IMG3]]
+
+Mõne sõna mitmuse moodustamine erineb õpitud reeglitest. Need tuleb meelde jätta:
+* дом - дома (maja - majad), город - города (linn - linnad), директор - директора (direktor - direktorid),
+доктор - доктора (arst - arstid)
+* время - времена (aeg - ajad), имя - имена (nimi - nimed)
+* брат - братья (vend - vennad), друг - друзья (sõber - sobrad), дерево - деревья (рuu - puud), стул - стулья (tool - toolid), муж - мужья (abikaasa (mees) - (abikaasad), сын - сыновья (роеg - pojad)
+* учитель - учителя (õpetaja - õpetajad)
+* сестра - сёстры (õde - õed), жена - жёны (abikaasa (naine) - abikaasad)
+* человек - люди (inimene - inimesed), ребёнок - дети (laps - lapsed)
+
+NB! Mõned sõnad on ainult ainsuses:
+масло - või, молоко - рііm, какао - kakao, кино - kino, вода - vesi, фото - foto, помощь - abi,
+молодёжь - noored, одежда - riided, обувь - jalanõud, мебель - mööbel, транспорт - transport,
+золото - kuld, cepeбpо - hõbe, мясо - liha, мука - jahu, cаxap - suhkur, лук - sibul, капуста -
+kapsas, морковь - porgand, картофель - kartul, nocуда-toidunõud
+
+NB! Mõned sõnad on ainult mitmuses:
+часы - kell, очки - prillid, ножницы - käärid, брюки - püksid, деньги - raha, каникулы - vaheaeg
+
+
+
 
 

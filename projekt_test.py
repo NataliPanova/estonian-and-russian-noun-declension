@@ -5,7 +5,6 @@ from quiz_data import quiz_data
 from quiz_data import quiz_data2
 from PIL import Image, ImageTk
 import os
-#import sys
 
 #Function to get the path
 def resource_path(relative_path):
@@ -15,6 +14,12 @@ def resource_path(relative_path):
 root_main = tk.Tk()
 root_main.title("Käänded")
 root_main.geometry("250x200+100+100")
+
+global_font = ("Times New Roman", 13)
+root_main.option_add("*Font", global_font)
+
+button_font = ("Times New Roman", 13)
+root_main.option_add("*TButton.Font", button_font)
 
 def back_to_main(current_window):
     current_window.withdraw() #Hiding the window, but not destroying it
@@ -38,7 +43,7 @@ image_params_est = [ [{'file': '14käänet.png', 'coords': (200, 70), 'size': (3
 
 text_files_rus = ['text1_rus.txt', 'test.txt', 'text.txt']  # Add more filenames as needed
 
-image_params_rus = [ [{'file': 'tabel1_rus.png', 'coords': (50, 100), 'size': (550, 450)}, {'file': 'sugu_rus.png', 'coords': (50, 620), 'size': (620, 420)}],
+image_params_rus = [ [{'file': 'tabel1_rus.png', 'coords': (50, 100), 'size': (550, 450)}, {'file': 'sugu_rus.png', 'coords': (50, 620), 'size': (620, 420)}, {'file': 'mitmus_rus.jpg', 'coords': (50, 920), 'size': (430, 320)}],
                [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (300, 200)}, {'file': 'mitmus.png', 'coords': (420, 300), 'size': (250, 200)}],
                [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
             ]
@@ -52,17 +57,17 @@ def create_window(previous_window, index, text_files, image_params):
 
     new_window = tk.Toplevel(previous_window)
     new_window.title(f"Teooria - Aken {index + 1}")
-    new_window.geometry("1000x1000+100+100")
+    new_window.geometry("1000x800+0+0")
 
     btn_back = ttk.Button(new_window, text="Tagasi", command=lambda: back_to_previous(new_window, previous_window))
     btn_back.place(x=390, y=20, width=110)
 
     if index < len(text_files) - 1:
-        btn_next = ttk.Button(new_window, text="Järgmine", command=lambda: create_window(new_window, index + 1, text_files, image_params))
+        btn_next = ttk.Button(new_window, text="Edasi", command=lambda: create_window(new_window, index + 1, text_files, image_params))
         btn_next.place(x=500, y=20, width=110)
 
     frame = ttk.Frame(new_window)
-    frame.place(x=50, y=50, width=900, height=900)
+    frame.place(x=50, y=50, width=900, height=700)
 
     canvas = tk.Canvas(frame)
     scrollbar = ttk.Scrollbar(frame, orient="vertical", command=canvas.yview)
@@ -79,16 +84,23 @@ def create_window(previous_window, index, text_files, image_params):
     def on_mouse_wheel(event):
         canvas.yview_scroll(int(-1*(event.delta/120)), "units")
 
+    def bind_mouse_wheel(event):
+        canvas.bind_all("<MouseWheel>", on_mouse_wheel)
+
     canvas.bind_all("<MouseWheel>", on_mouse_wheel)
+
+    new_window.bind("<Map>", bind_mouse_wheel)  # Bind mouse wheel event when window is shown again
 
     with open(resource_path(text_files[index]), encoding='utf-8') as file:
         content = file.read()
 
     parts = content.split('[[IMG')  # Split the text at markers
 
+   # text_font = ("Arial", 14)
+
     for i, part in enumerate(parts):
         if i == 0:
-            label = tk.Label(scrollable_frame, text=part.strip(), wraplength=700, justify=tk.LEFT)
+            label = tk.Label(scrollable_frame, text=part.strip(), wraplength=700, justify=tk.LEFT)#, font=text_font)
             label.pack(anchor="w", pady=10)
         else:
             marker, text = part.split(']]', 1)
@@ -106,11 +118,8 @@ def create_window(previous_window, index, text_files, image_params):
                 img_label.pack(anchor="w", pady=10)
 
             # Display the text after the image
-            label = tk.Label(scrollable_frame, text=text.strip(), wraplength=700, justify=tk.LEFT)
+            label = tk.Label(scrollable_frame, text=text.strip(), wraplength=700, justify=tk.LEFT)#, font=text_font)
             label.pack(anchor="w", pady=10)
-
-
-
 
 #Function for window where is possible to choose between theory and test
 def rus():
@@ -144,7 +153,6 @@ def est():
     btn_back.place(x=70, y=140, width=110) #Button place
 
 #Function for a theory window
-
 def theory_rus(gamesc):
     gamesc.withdraw()  # Hide the main window, but not destroy it
     create_window(gamesc, 0, text_files_rus, image_params_rus)
