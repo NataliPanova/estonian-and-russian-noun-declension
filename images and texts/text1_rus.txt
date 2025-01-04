@@ -1,8 +1,15 @@
-Vene keele käänded
+VENE KEELE KÄÄNDED
 
 Vene keele nimisõnade käänamistabel
 
 [[IMG1]]
+
+
+Nimisõnade käänamise protsess:
+1)Soo määramine - mees-, nais- või kesksugu
+2)Arvu määramine - ainsus või mitmus
+3)Sobiva käändelõpu lisamine
+
 
 Nimisõnade sugu
 

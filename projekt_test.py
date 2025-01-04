@@ -30,9 +30,6 @@ def back_to_previous(current_window, previous_window):
     current_window.withdraw() #Hiding the window, but not destroying it
     previous_window.deiconify() #Showing the hidden window
 
-
-
-
 # List of text filenames for each window
 text_files_est = ['test.txt', 'text.txt', 'text1_rus.txt']  # Add more filenames as needed
 
@@ -41,13 +38,13 @@ image_params_est = [ [{'file': '14käänet.png', 'coords': (200, 70), 'size': (3
                [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
             ]
 
-text_files_rus = ['text1_rus.txt', 'test.txt', 'text.txt']  # Add more filenames as needed
+text_files_rus = ['text1_rus.txt', 'text2_rus.txt', 'text3_rus.txt', 'text4_rus.txt']  # Add more filenames as needed
 
-image_params_rus = [ [{'file': 'tabel1_rus.png', 'coords': (50, 100), 'size': (550, 450)}, {'file': 'sugu_rus.png', 'coords': (50, 620), 'size': (620, 420)}, {'file': 'mitmus_rus.jpg', 'coords': (50, 920), 'size': (430, 320)}],
-               [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (300, 200)}, {'file': 'mitmus.png', 'coords': (420, 300), 'size': (250, 200)}],
-               [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
-            ]
-
+image_params_rus = ([ [{'file': 'tabel1.1_rus.png', 'coords': (50, 100), 'size': (720, 620)}, {'file': 'sugu_rus.png', 'coords': (50, 620), 'size': (620, 420)}, {'file': 'mitmus_rus.jpg', 'coords': (50, 920), 'size': (430, 320)}],
+               [{'file': 'gen1_rus.png', 'coords': (200, 100), 'size': (850, 310)}, {'file': 'gen2_rus.png', 'coords': (520, 400), 'size': (787, 729)}],
+               [{'file': 'dat1_rus.png', 'coords': (50, 300), 'size': (890, 310)}, {'file': 'dat2_rus.png', 'coords': (420, 300), 'size': (869, 246)}],
+               [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (400, 300)}]
+                ])
 
 def create_window(previous_window, index, text_files, image_params):
     if index >= len(text_files):
@@ -67,7 +64,7 @@ def create_window(previous_window, index, text_files, image_params):
         btn_next.place(x=500, y=20, width=110)
 
     frame = ttk.Frame(new_window)
-    frame.place(x=50, y=50, width=900, height=700)
+    frame.place(x=20, y=50, width=900, height=700)
 
     canvas = tk.Canvas(frame)
     scrollbar = ttk.Scrollbar(frame, orient="vertical", command=canvas.yview)
@@ -118,7 +115,7 @@ def create_window(previous_window, index, text_files, image_params):
                 img_label.pack(anchor="w", pady=10)
 
             # Display the text after the image
-            label = tk.Label(scrollable_frame, text=text.strip(), wraplength=700, justify=tk.LEFT)#, font=text_font)
+            label = tk.Label(scrollable_frame, text=text.strip(), wraplength=900, justify=tk.LEFT)#, font=text_font)
             label.pack(anchor="w", pady=10)
 
 #Function for window where is possible to choose between theory and test
@@ -386,5 +383,3 @@ btn2 = ttk.Button(root_main, text="Eesti", command=est)
 btn2.place(x=70, y=60, width=110)
 
 root_main.mainloop() #Cycle end
-
-#
