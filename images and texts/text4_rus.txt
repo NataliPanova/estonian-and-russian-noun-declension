@@ -1,1 +1,106 @@
-dvd
+ВИНИТЕЛЬНЫЙ ПАДЕЖ (akusatiiv)
+Кого?   Что?    Куда?
+
+Винительный kääne näitab, millele või kellele on tegevus suunatud.
+Vene akusatiivi tõlkimisel tuleb tarvitada üht sihitise käändeist, s.o osastavat, omastavat või nimetavat:
+                  Девочка читает книгу.        Айвар открыл окно.        Закрой дверь!
+Peale selle võib nimisöna akusatiivis esineda ajamäärusena, vastates küsimusele kui kaua? (как долго?):
+                 Он работал над книгой всю ночь.   Целый день он ничем не занимался.
+Selle kaände juures on väga tähtis, millele tegevus on suunatud - kas asjale (книга - raamat, тетрадь - vihik, словарь - sõnastik) või elusolendile (мальчик - poiss, Андрей - Andrei, собака - koer).
+
+* Kui винительный käändes on asja tähistav nimisõna, vastab see küsimusele mida? ЧТО?
+Что хочет Антон? Mida Anton tahab?
+Антон хочет новый компьютер. Anton tahab uut arvutit.
+Что читает Анна? Mida Anna loeb?
+Анна читает первую интересную книгу. Anna loeb esimest
+huvitavat raamatut.
+
+* Kui винтельный käändes on elusolendit (inimesed, loomad, linnud) tähistav nimisõna, vastab see küsimusele keda? КОГО?
+Кого знает Антон? Keda Anton tunneb?
+Антон знает умную Анну. Anton tunneb tarka Annat.
+Кого любит Анна? Keda Anna armastab?
+Анна любит красивого Антона.
+Anna armastab ilusat Antonit.
+
+
+img - tabelid
+
+
+NB! дочерей, сыновей, детей, друзей, людей, родителей, соседей
+
+Кого ты знаешь? Keda sa tunned? Андрея. Andreid.
+Куда вы ходили вчера? Kus te eile käisite? В музей. Muuseumis.
+Что они поют? Mida nad laulavad? Песни. Laule.
+Куда бегут дети? Kuhu lapsed jooksevad? В школу. Kooli.
+
+
+1) Tähistab objekti.
+Vastab küsimustele: keda? кого? mida? что?
+
+Tihti kasutatakse koos tegusõnadega
+любить - armastama, хотеть - tahtma, есть - sööma, пить - jooma,
+читать - lugеma, знать - teadma, понимать - aru saama,
+делать - tegema, писать - kirjutama, смотреть - vaatama,
+слушать - kuulama, учить - õppima, купить - ostma,
+видеть - nägema, ждать - ootama, рисовaть - joonistama,
+носить - kandma, переводить - tõlkima, объяснять - seletama,
+заказать - tellima, спросить - küsima, отвечaть - vastama,
+проверять - kontrollima, помнить - mäletama, повторять - kordama,
+получить - saama
++
+ЧТО? КОГО? (винительный падеж)
+
+Кого он любит? Keda ta armastab?
+- Он любит Тамaру. Ta armastab Tamarat.
+- Что он пишет? Mida ta kirjutab?
+- Письмo. Kirja.
+
+2) Tähistab aega. Vastab küsimustele: millal? когдa? kui kauaks? на какое время? mis aja jooksul? зa
+какое время? kui kaua? как дoлго? скoлько врeмени? kui tihti? как чaсто?
+
+А: Когда ты приедешь? Millal sa tuled?
+Б: В субботу, через неделю. Laupäeval, nädala pärast.
+А: На какое время ты уезжаешь? Kui pikaks ajaks sa ära sõidad?
+Б: На мeсяц. Kuuks ajaks.
+А: За какое врeмя ты сделаешь ту рабoту? Mis aja jooksul sa selle töö ära teed?
+Б: За два часа. Kahe tunni jooksul.
+А: Как дoлго (скoлько времени) ты читaл ту книгу? Kui kaua sa lugesid seda raamatut?
+Б: Целый мeсяц. Terve kuu.
+А: Как часто ты хoдишь в бaню? Kui tihti sa käid saunas?
+Б: Каждую неделю. Iga nädal.
+А: Когда ты уeдешь? Millal sa ära sõidad?
+Б: Через день. Ulejärgmisel päeval.
+А: Когда вы приехали? Millal te saabusite?
+Б: Неделю назад. Nädal tagasi.
+
+В, НА, ЧЕРЕЗ, ЗА + ВП
+ВП + НАЗАД
+
+3) Tähistab objekti koos tegusõnaga игрaть. Vastab küsimusele: игрaть в(о) что? mängima mida?
+А: Во что ты играешь? Mida sa mängid?
+Б: В шахматы. Malet.
+
+4) Tähistab subjekti koos sõnaühendiga выйти замуж.
+Vastab küsimusele: выйти замуж за кого? mehele minema kellele?
+А: За кого она вышла замуж? Kellele ta mehele läks?
+Б: За Сергея. Sergeile.
+
+5) Tähistab suunda, kuhu minnakse.
+КУДА? + винительный падеж
+
+Tihti kasutatakse koos liikumistegusõnadega идти (minema),
+ехать (sõitma), бежать (jooksma), плыть (ujuma).
+Куда Антон идёт? Kuhu Anton läheb?
+Он идёт в театр. Ta läheb teatrisse.
+
+
+img - eessõnad
+
+Eesti keeles aitavad küsimusele KUHU vastata sõnalõpud -LE, -SSE või null-lõpp.
+Eesti sõnalõpp -SSE saab reeglina läbi vene eessõnaga B.
+Eesti sõnalõpp -LE saab reeglina läbi vene eessnaga HA
+
+Kõigepealt tuleb kohale, kuhu sa oled minemas, lisada eessõna B või HA ja muuta sõnalöppu.
+
+
+img - eessõnad В, НА

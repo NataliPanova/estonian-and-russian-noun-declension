@@ -1,16 +1,6 @@
 РОДИТЕЛЬНЫЙ ПАДЕЖ (genitiiv).
 
-Genitiivis nimisõna esineb:
-a) täiendina:  книга брата, расписание уроков (tunniplaan), учитель математики, урок физики
-b) eitava sihilise verbi või eitussõnaga  нет ( e. k.  osastav):   У меня нет карандаша.
-c) sihitisena, kui see tähistab osa mingist tervikust või ebamäärast hulka:  Принеси хлеба.
-d) võrdlusalusena ( e. k. seestütlev): Брат старше сестры.
-e) ajamäärusena kuupäevade märkimisel (e. k. alalütlev): Брат уехал одиннадцатого декабря.
-f) ebamäärast hulka väljendavate sõnadega : много, мало, несколько, сколько, большинство( e. k. osastav): два стола, пять книг
-
-[[IMG1]]
-[[IMG3]]
-
+Tähistab:
 1)Isikut, kellele kuulub mingi ese või objekt (küsimus  ЧЕЙ?  ЧЬЯ?  ЧЬЁ?  ЧЬИ?  =  Кого? – kelle oma?)
 Платье сестры, велосипед брата, словарь учительницы, книга Кристины, тетрадь Андрея
 
@@ -28,5 +18,18 @@ Mille/kelle juures? Mille/kelle kõrval?  У бабушки, около дома
 
 6)Koos vastava eessõnaga lähtekohta: Откуда? Из чего? С (со) чего? Kust? Millest?
 Из Эстонии, со стадиона, с тренировки, с озера (järvelt); из школы, из музея
+
+[[IMG1]]
+[[IMG3]]
+
+Родительный käändes nimisõna esineb:
+a) täiendina:  книга брата, расписание уроков (tunniplaan), учитель математики, урок физики
+b) eitava sihilise verbi või eitussõnaga  нет ( e. k.  osastav):   У меня нет карандаша.
+c) sihitisena, kui see tähistab osa mingist tervikust või ebamäärast hulka:  Принеси хлеба.
+d) võrdlusalusena ( e. k. seestütlev): Брат старше сестры.
+e) ajamäärusena kuupäevade märkimisel (e. k. alalütlev): Брат уехал одиннадцатого декабря.
+f) ebamäärast hulka väljendavate sõnadega : много, мало, несколько, сколько, большинство( e. k. osastav): два стола, пять книг
+
+
 
 [[IMG2]]

@@ -38,7 +38,7 @@ image_params_est = [ [{'file': '14käänet.png', 'coords': (200, 70), 'size': (3
                [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
             ]
 
-text_files_rus = ['text1_rus.txt', 'text2_rus.txt', 'text3_rus.txt', 'text4_rus.txt']  # Add more filenames as needed
+text_files_rus = ['text1_rus.txt', 'text2_rus.txt', 'text3_rus.txt', 'text4_rus.txt', 'text5_rus.txt', 'text6_rus.txt']  # Add more filenames as needed
 
 image_params_rus = ([ [{'file': 'tabel1.1_rus.png', 'coords': (50, 100), 'size': (720, 620)}, {'file': 'sugu_rus.png', 'coords': (50, 620), 'size': (620, 420)}, {'file': 'mitmus_rus.jpg', 'coords': (50, 920), 'size': (430, 320)}],
                [{'file': 'gen1_rus.png', 'coords': (200, 100), 'size': (850, 310)}, {'file': 'gen2_rus.png', 'coords': (520, 400), 'size': (787, 729)}, {'file': 'gen3_rus.jpg', 'coords': (520, 400), 'size': (587, 729)}],
