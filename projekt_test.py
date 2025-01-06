@@ -46,7 +46,6 @@ image_params_rus = ([ [{'file': 'tabel1.1_rus.png', 'coords': (50, 100), 'size':
                [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (400, 300)}]
                 ])
 
-
 def create_window(previous_window, index, text_files, image_params):
     if index >= len(text_files):
         return  # If no more text files, stop creating new windows
