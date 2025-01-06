@@ -93,7 +93,6 @@ Tihti kasutatakse koos liikumistegusõnadega идти (minema),
 Куда Антон идёт? Kuhu Anton läheb?
 Он идёт в театр. Ta läheb teatrisse.
 
-
 img - eessõnad
 
 Eesti keeles aitavad küsimusele KUHU vastata sõnalõpud -LE, -SSE või null-lõpp.
