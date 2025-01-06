@@ -42,7 +42,7 @@ text_files_rus = ['text1_rus.txt', 'text2_rus.txt', 'text3_rus.txt', 'text4_rus.
 
 image_params_rus = ([ [{'file': 'tabel1.1_rus.png', 'coords': (50, 100), 'size': (720, 620)}, {'file': 'sugu_rus.png', 'coords': (50, 620), 'size': (620, 420)}, {'file': 'mitmus_rus.jpg', 'coords': (50, 920), 'size': (430, 320)}],
                [{'file': 'gen1_rus.png', 'coords': (200, 100), 'size': (850, 310)}, {'file': 'gen2_rus.png', 'coords': (520, 400), 'size': (787, 729)}, {'file': 'gen3_rus.jpg', 'coords': (520, 400), 'size': (587, 729)}],
-               [{'file': 'dat1_rus.png', 'coords': (50, 300), 'size': (890, 310)}, {'file': 'dat2_rus.png', 'coords': (420, 300), 'size': (869, 246)}, {'file': 'dat3_rus.jpg', 'coords': (420, 300), 'size': (880, 341)}],
+               [{'file': 'dat1_rus.png', 'coords': (50, 300), 'size': (890, 310)}, {'file': 'dat2_rus.png', 'coords': (420, 300), 'size': (869, 276)}, {'file': 'dat3_rus.jpg', 'coords': (420, 300), 'size': (880, 341)}],
                [{'file': 'sugu_rus.png', 'coords': (50, 300), 'size': (400, 300)}]
                 ])
 
