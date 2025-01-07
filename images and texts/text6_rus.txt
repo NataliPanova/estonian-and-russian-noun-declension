@@ -3,7 +3,8 @@
 Предложный käänet tarvitatakse alati koos eessõnaga О:
 О КОМ? Kellest?   О ЧЁМ?  Millest?   ГДЕ? Kus?
 
-img - tabelid
+[[IMG1]]
+[[IMG3]]
 
 1) Предложный kääne tähistab
 kellegi või millegi asukohta.
@@ -23,7 +24,7 @@ NB! на уроке - tunnis, на тренирoвке - trennis
 +
 ГДЕ? Kus? (предлoжный падеж)
 
-tabel - В, НА
+[[IMG6]]
 
 2) Seda kasutatakse siis, kui tahad öelda, millest mõtled, unistad või räägid.
 Selles tähenduses
@@ -51,12 +52,14 @@ Selles tähenduses
 На чём ты любишь катaться? Millega sa armastad sõita?
 Я люблю катaться на велосипеде. Ma armastan jalgrattaga sõita.
 
-img - tabel(transport)
+[[IMG4]]
 
 4) Tähistab toimumisaega (nädal, kuu, aasta, sajand) ja vastab küsimusele: millal? когда? Когда будет контрольная работа? Millal on kontrolltöö?
 Контрoльная рабoта будет на следующей неделе. Kontrolltöö on järgmisel nädalal.
 Когда ты ездил отдыхaть? Millal sa puhkama sõitsid?
 Я ездил отдыхaть в aвгусте. Ma sõitsin augustis puhkama.
+
+[[IMG5]]
 
 КОГДА? MILLAL?
   B
@@ -85,4 +88,4 @@ Veel tähistab предложный kääne:
 Ты умеешь писaть на русском язык? Kas sa oskad vene keeles kirjutada?
 Нет, я умею тoлько говорить на русском языке. Ei, ma oskan vene keeles ainult rääkida.
 
-img - eessõnad
+[[IMG2]]

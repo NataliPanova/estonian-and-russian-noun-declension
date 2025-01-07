@@ -16,7 +16,8 @@ f)Kaudsihitist paljude verbide puhul, esinedes verbi rektsioonilise laiendina:
 управлять, руководить, командовать, владеть, заниматься, интересоватсья, наслаждаться.
 Он хорошо владеет русским языком.  Кристина занимается лыжным спортом.
 
-img - tabelid
+[[IMG1]]
+[[IMG3]]
 
 1) Творительный kääne vastab küsimustele кем? чем?, mida tõlgitakse eesti keelde väga erinevalt.
 
@@ -65,4 +66,4 @@ eessõnaga C tähistab sõna aine koostist või täidist ja vastab küsimusele: 
 +
 С КЕМ? С ЧЕМ? (творительный падеж)
 
-img - eessõnad
+[[IMG2]]

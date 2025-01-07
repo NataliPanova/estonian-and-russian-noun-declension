@@ -23,9 +23,8 @@ huvitavat raamatut.
 Anna armastab ilusat Antonit.
 
 
-img - tabelid
-
-
+[[IMG1]]
+[[IMG3]]
 NB! дочерей, сыновей, детей, друзей, людей, родителей, соседей
 
 Кого ты знаешь? Keda sa tunned? Андрея. Andreid.
@@ -93,7 +92,7 @@ Tihti kasutatakse koos liikumistegusõnadega идти (minema),
 Куда Антон идёт? Kuhu Anton läheb?
 Он идёт в театр. Ta läheb teatrisse.
 
-img - eessõnad
+[[IMG2]]
 
 Eesti keeles aitavad küsimusele KUHU vastata sõnalõpud -LE, -SSE või null-lõpp.
 Eesti sõnalõpp -SSE saab reeglina läbi vene eessõnaga B.
@@ -101,5 +100,4 @@ Eesti sõnalõpp -LE saab reeglina läbi vene eessnaga HA
 
 Kõigepealt tuleb kohale, kuhu sa oled minemas, lisada eessõna B või HA ja muuta sõnalöppu.
 
-
-img - eessõnad В, НА
+[[IMG4]]
