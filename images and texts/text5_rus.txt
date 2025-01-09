@@ -66,4 +66,5 @@ eessõnaga C tähistab sõna aine koostist või täidist ja vastab küsimusele: 
 +
 С КЕМ? С ЧЕМ? (творительный падеж)
 
+Eessõnad
 [[IMG2]]

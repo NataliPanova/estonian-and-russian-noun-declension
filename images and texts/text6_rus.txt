@@ -88,4 +88,5 @@ Veel tähistab предложный kääne:
 Ты умеешь писaть на русском язык? Kas sa oskad vene keeles kirjutada?
 Нет, я умею тoлько говорить на русском языке. Ei, ma oskan vene keeles ainult rääkida.
 
+Eessõnad
 [[IMG2]]
