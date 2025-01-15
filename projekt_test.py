@@ -174,7 +174,7 @@ def all_rus(gamesc4):
     gamesc4.withdraw()
     gamesc5 = tk.Toplevel(gamesc4)
     gamesc5.title("Test")
-    gamesc5.geometry("600x600+100+100")
+    gamesc5.geometry("1000x800+100+100")
 
     #Initializing variables
     score = 0
@@ -272,7 +272,7 @@ def all_rus(gamesc4):
     show_question()
 
     btn_back = ttk.Button(gamesc5, text="Tagasi", command=lambda: back_to_previous(gamesc5, gamesc4)) #Button to move back
-    btn_back.place(x=243.5, y=500, width=110)
+    btn_back.place(x=445, y=500, width=110)
 
 #Function for a theory window
 def theory_est(gamesc2):
@@ -297,7 +297,7 @@ def all_est(gamesc7):
     gamesc7.withdraw()
     gamesc8 = tk.Toplevel(gamesc7)
     gamesc8.title("Test")
-    gamesc8.geometry("600x600+100+100")
+    gamesc8.geometry("1000x800+100+100")
 
     score2 = 0
     current_question2 = 0
@@ -390,7 +390,7 @@ def all_est(gamesc7):
     show_question()
 
     btn_back = ttk.Button(gamesc8, text="Tagasi", command=lambda: back_to_previous(gamesc8, gamesc7))
-    btn_back.place(x=246.5, y=500, width=110)
+    btn_back.place(x=445, y=500, width=110)
 
 btn = ttk.Button(root_main, text="Vene", command=rus)
 btn.place(x=70, y=100, width=110)
