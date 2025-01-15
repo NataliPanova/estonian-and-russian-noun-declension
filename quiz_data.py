@@ -1,18 +1,84 @@
 
 quiz_data = [
     {
-        "question": "Вероника интересуется БАЛЕТОМ",
-        "choices": ["Именительный ","Дательный","Творительный","Родительный"],
-        "answer": "Творительный",
-        "correct": "'Творительный', потому что 'интересуется чем?'"
+        "name": "Vali õiget nimisõna käänet",
+        "question": "Вероника интересуется (балетом).",
+        "choices": ["именительный ","дательный","творительный","родительный"],
+        "answer": "творительный",
+        "correct": "'творительный', sest 'интересуется чем?'"
 
     },
     {
-        "question": "Вижу красивый ДОМ",
-        "choices": ["Винительный","Предложный","Дательный","Именительный"],
-        "answer": "Винительный",
-        "correct": "'Винительный', потому что 'виню что?'"
+        "name": "Vali õiget nimisõna käänet",
+        "question": "Вижу красивый (дом).",
+        "choices": ["винительный","предложный","дательный","именительный"],
+        "answer": "винительный",
+        "correct": "'винительный', sest ... '"
     },
+{
+        "name": "Vali õiget nimisõna vormi",
+        "question": "У нас много (студенты).",
+        "choices": ["студентах","студента","студентов","студентами"],
+        "answer": "студентов",
+        "correct": "'студентов', sest Много студентов —  родительный kääne, mis vastab küsimustele 'кого, чего?'."
+    },
+{
+        "name": "Vali õiget nimisõna vormi",
+        "question": "Мы плаваем в (море).",
+        "choices": ["морю","море","морем","моря"],
+        "answer": "море",
+        "correct": "'море', sest В море —  предложный kääne, mis vastab küsimusele 'где?'."
+    },
+{
+        "name": "Vali õiget nimisõna vormi",
+        "question": "У (дочь) есть хорошая подруга.",
+        "choices": ["дочерьми","дочерью","дочи","дочери"],
+        "answer": "дочери",
+        "correct": "'дочери', sest У дочери — родительный kääne, mis vastab siin küsimusele 'кого?'"
+    },
+{
+        "name": "Vali õiget nimisõna vormi",
+        "question": "Мои родители не любят летать на (самолёты).",
+        "choices": ["самолётах","самолётами","самолётов","самолётам"],
+        "answer": "самолётах",
+        "correct": "'самолётах', sest На самолётах — предложный kääne, mis vastab küsimusele 'на чём?'. "
+    },
+{
+        "name": "Vali õiget nimisõna vormi",
+        "question": "Мы готовимся к (праздник).",
+        "choices": ["праздник","празднику","праздником","праздника"],
+        "answer": "празднику",
+        "correct": "'празднику', sest К празднику — дательный kääne, mis vastab küsimustele 'к кому, к чему?'."
+    },
+{
+        "name": "Vali õiget nimisõna vormi",
+        "question": "В (четверг) она не работает.",
+        "choices": ["четверге","четверга","четверг","четвергу"],
+        "answer": "четверг",
+        "correct": "'четверг', sest В четверг — винительный kääne, mis vastab küsimusele 'когда?'."
+    },
+{
+        "name": "Vali õiget nimisõna vormi",
+        "question": " ",
+        "choices": [" "," "," "," "],
+        "answer": " ",
+        "correct": " "
+    },
+{
+        "name": "Vali õiget nimisõna vormi",
+        "question": " ",
+        "choices": [" "," "," "," "],
+        "answer": " ",
+        "correct": " "
+    },
+{
+        "name": "Vali õiget nimisõna käänet",
+        "question": " ",
+        "choices": [" "," "," "," "],
+        "answer": " ",
+        "correct": " "
+    },
+
 
 ]
 
