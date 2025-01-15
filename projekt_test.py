@@ -181,6 +181,9 @@ def all_rus(gamesc4):
     current_question = 0
     random.shuffle(quiz_data) #Shuffle the list of questions
 
+    # selection of random questions
+    selected_questions = random.sample(quiz_data, 10)
+
     #Time
     sec = 0
     min = 0
@@ -197,7 +200,9 @@ def all_rus(gamesc4):
 
     #Function to display a question
     def show_question():
-        question = quiz_data[current_question]
+        question = selected_questions[current_question]
+
+        nm_label.config(text=question["name"])
         qs_label.config(text=question["question"])
         choices = question["choices"]
         for i in range(4):
@@ -205,17 +210,20 @@ def all_rus(gamesc4):
         feedback_label.config(text="")
         next_btn.config(state="disabled")
 
+        # Question counter
+        question_counter_label.config(text=f"Küsimus: {current_question + 1} / {len(selected_questions)}")
+
     #Function to check the answer
     def check_answer(choice):
         nonlocal score, current_question
-        question = quiz_data[current_question]
+        question = selected_questions[current_question]
         selected_choice = choice_btns[choice].cget("text")
         if selected_choice == question["answer"]:
             score += 1
-            score_label.config(text="Punktid: {}/{}".format(score, len(quiz_data)))
+            score_label.config(text="Punktid: {}/{}".format(score, len(selected_questions)))
             feedback_label.config(text="Õige!")
         else:
-            feedback_label.config(text="Vale!\nÕige vastus oli: {}".format(question["correct"]))
+            feedback_label.config(text="Vale!\nÕige vastus oli {}".format(question["correct"]))
         for button in choice_btns:
             button.config(state="disabled")
         next_btn.config(state="normal")
@@ -224,11 +232,11 @@ def all_rus(gamesc4):
     def next_question():
         nonlocal current_question
         current_question += 1
-        if current_question < len(quiz_data):
+        if current_question < len(selected_questions):
             show_question()
         else:
             messagebox.showinfo("Test on tehtud!",
-                                f"Test on tehtud! Sinu tulemus: {score}/{len(quiz_data)} \n" f"Protsent: {score * 100 / len(quiz_data):.2f}% \n Aeg: {min:02}:{sec:02}")
+                                f"Test on tehtud! Sinu tulemus: {score}/{len(selected_questions)} \n" f"Protsent: {score * 100 / len(selected_questions):.2f}% \n Aeg: {min:02}:{sec:02}")
             gamesc5.destroy()
 
     #Widgets
@@ -236,15 +244,21 @@ def all_rus(gamesc4):
     timer_label.pack(pady=10)
     start_timer()
 
+    nm_label = ttk.Label(gamesc5)
+    nm_label.pack(pady=10)
+
     qs_label = ttk.Label(gamesc5)
     qs_label.pack(pady=10)
-
 
     choice_btns = [] #Choice buttons
     for i in range(4):
         button = ttk.Button(gamesc5, command=lambda i=i: check_answer(i))
         button.pack(pady=5)
         choice_btns.append(button)
+
+    # Question counter
+    question_counter_label = ttk.Label(gamesc5, text=f"Küsimus: {current_question + 1} / {len(selected_questions)}")
+    question_counter_label.pack(pady=10)
 
     feedback_label = ttk.Label(gamesc5) #Feedback
     feedback_label.pack(pady=10)
