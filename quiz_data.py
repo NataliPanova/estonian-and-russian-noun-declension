@@ -106,6 +106,14 @@ quiz_data = [
         "answer": "о",
         "correct": "'о', sest sõna говорить vajab предложный käänet ning see vastab siin küsimusele 'millest?."
     },
+{
+        "name": "Vali õiget eessõna",
+        "question": "... твоей помощи, я справился с проектом.",
+        "choices": ["На","Ради","Между","Благодаря"],
+        "answer": "Благодаря",
+        "correct": "'Благодаря', sest see eessõna tähistab 'tänu', 'tõttu', mis tähistab põhjust."
+    },
+
 
 ]
 
