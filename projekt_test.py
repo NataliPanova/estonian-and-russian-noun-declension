@@ -263,7 +263,7 @@ def all_rus(gamesc4):
     feedback_label = ttk.Label(gamesc5) #Feedback
     feedback_label.pack(pady=10)
 
-    score_label = ttk.Label(gamesc5, text="Punktid: 0/{}".format(len(quiz_data))) #Score
+    score_label = ttk.Label(gamesc5, text="Punktid: 0/{}".format(len(selected_questions))) #Score
     score_label.pack(pady=10)
 
     next_btn = ttk.Button(gamesc5, text="Edasi", command=next_question, state="disabled") #Button to move forward
