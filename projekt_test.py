@@ -271,7 +271,7 @@ def all_rus(gamesc4):
 
     show_question()
 
-    btn_back = ttk.Button(gamesc5, text="Tagasi", command=lambda: back_to_previous(gamesc5, gamesc4)) #Button to move back
+    btn_back = ttk.Button(gamesc5, text="Tagasi menüüsse", command=lambda: back_to_previous(gamesc5, gamesc4)) #Button to move back
     btn_back.place(x=445, y=500, width=110)
 
 #Function for a theory window
@@ -389,7 +389,7 @@ def all_est(gamesc7):
 
     show_question()
 
-    btn_back = ttk.Button(gamesc8, text="Tagasi", command=lambda: back_to_previous(gamesc8, gamesc7))
+    btn_back = ttk.Button(gamesc8, text="Tagasi menüüsse", command=lambda: back_to_previous(gamesc8, gamesc7))
     btn_back.place(x=445, y=500, width=110)
 
 btn = ttk.Button(root_main, text="Vene", command=rus)

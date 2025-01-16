@@ -53,7 +53,7 @@ Vastab küsimustele: kelle juurde (poole)? к кому? mille juurde (äärde)? 
 
 7. Tähistab isikut või muud objekti, kelle või mille vanusest on jutt. Vastab küsimusele: kui vana? сколько лет?
 Сколько вам лет? Kui vanad te olete?
-Мише 20 лет, а мне - 15лет. Miša on 20-aastane, aga mina 15-aastane.
+Мише 20 лет, а мне - 15 лет. Miša on 20-aastane, aga mina 15-aastane.
 
 Eessõnad
 [[IMG2]]

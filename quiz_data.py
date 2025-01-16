@@ -85,6 +85,27 @@ quiz_data = [
         "answer": "винительный",
         "correct": "'винительный', sest ... '"
     },
+{
+        "name": "Vali õiget eessõna",
+        "question": "Моя мама работает ... магазине.",
+        "choices": ["в","под","на","из"],
+        "answer": "в",
+        "correct": "'в', sest sõna работать vajab предложный käänet, mis vastab siin küsimusele 'где?.'"
+    },
+{
+        "name": "Vali õiget eessõna",
+        "question": "Мы идем ... улице.",
+        "choices": ["у","через","по","с"],
+        "answer": "по",
+        "correct": "'по', sest siin kasutatakse дательный käänet tähenduses 'mööda'."
+    },
+{
+        "name": "Vali õiget eessõna",
+        "question": "Мы говорили ... погоде.",
+        "choices": ["за","о","у","к"],
+        "answer": "о",
+        "correct": "'о', sest sõna говорить vajab предложный käänet ning see vastab siin küsimusele 'millest?."
+    },
 
 ]
 
