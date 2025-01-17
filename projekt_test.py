@@ -237,7 +237,7 @@ def all_rus(gamesc4):
         else:
             messagebox.showinfo("Test on tehtud!",
                                 f"Test on tehtud! Sinu tulemus: {score}/{len(selected_questions)} \n" f"Protsent: {score * 100 / len(selected_questions):.2f}% \n Aeg: {min:02}:{sec:02}")
-            gamesc5.destroy()
+            back_to_previous(gamesc5, gamesc4)
 
     #Widgets
     timer_label = tk.Label(gamesc5, text="00:00")
@@ -355,7 +355,7 @@ def all_est(gamesc7):
         else:
             messagebox.showinfo("Test on tehtud!",
                                 f"Test on tehtud! Sinu tulemus: {score2}/{len(selected_questions)} \n" f"Protsent: {score2 * 100 / len(selected_questions):.2f}% \n Aeg: {min:02}:{sec:02}" )
-            gamesc8.destroy()
+            back_to_previous(gamesc8, gamesc7)
 
     #Widgets
     timer_label = tk.Label(gamesc8, text="00:00")

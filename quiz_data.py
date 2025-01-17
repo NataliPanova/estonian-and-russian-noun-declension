@@ -5,70 +5,70 @@ quiz_data = [
         "question": "У нас много (студенты).",
         "choices": ["студентах","студента","студентов","студентами"],
         "answer": "студентов",
-        "correct": "'студентов', sest Много студентов —  родительный kääne, mis vastab siin küsimusele 'кого?'."
+        "correct": "'студентов', sest Много студентов —  родительный kääne, mis vastab siin küsimusele 'кого? (keda?)'."
     },
 {
         "name": "Vali õiget nimisõna vormi",
         "question": "Мы плаваем в (море).",
         "choices": ["морю","моря","морем","море"],
         "answer": "море",
-        "correct": "'море', sest В море —  предложный kääne, mis vastab siin küsimusele 'где?'."
+        "correct": "'море', sest В море —  предложный kääne, mis vastab siin küsimusele 'где? (kus?)'."
     },
 {
         "name": "Vali õiget nimisõna vormi",
         "question": "У (дочь) есть хорошая подруга.",
         "choices": ["дочерьми","дочерью","дочи","дочери"],
         "answer": "дочери",
-        "correct": "'дочери', sest У дочери — родительный kääne, mis vastab siin küsimusele 'кого?'"
+        "correct": "'дочери', sest У дочери — родительный kääne, mis vastab siin küsimusele 'у кого? (kellel?)'."
     },
 {
         "name": "Vali õiget nimisõna vormi",
         "question": "Мои родители не любят летать на (самолёты).",
         "choices": ["самолётах","самолётами","самолётов","самолётам"],
         "answer": "самолётах",
-        "correct": "'самолётах', sest На самолётах — предложный kääne, mis vastab siin küsimusele 'на чём?'. "
+        "correct": "'самолётах', sest На самолётах — предложный kääne, mis vastab siin küsimusele 'на чём? (mille peal?)'. "
     },
 {
         "name": "Vali õiget nimisõna vormi",
         "question": "Мы готовимся к (праздник).",
         "choices": ["праздник","празднику","праздником","праздника"],
         "answer": "празднику",
-        "correct": "'празднику', sest К празднику — дательный kääne, mis vastab siin küsimusele 'к чему?'."
+        "correct": "'празднику', sest К празднику — дательный kääne, mis vastab siin küsimusele 'к чему? (milleks?)'."
     },
 {
         "name": "Vali õiget nimisõna vormi",
         "question": "В (четверг) она не работает.",
         "choices": ["четверге","четверга","четверг","четвергу"],
         "answer": "четверг",
-        "correct": "'четверг', sest В четверг — винительный kääne, mis vastab siin küsimusele 'когда?'."
+        "correct": "'четверг', sest В четверг — винительный kääne, mis vastab siin küsimusele 'когда? (millal?)'."
     },
 {
         "name": "Vali õiget nimisõna vormi",
         "question": "Вчера мы ходили к (врач).",
         "choices": ["врачом","враче","врача","врачу"],
         "answer": "врачу",
-        "correct": "'врачу', sest К врачу — дательный kääne, mis vastab siin küsimusele 'к кому?."
+        "correct": "'врачу', sest К врачу — дательный kääne, mis vastab siin küsimusele 'к кому? (kelle juurde?)'."
     },
 {
         "name": "Vali õiget nimisõna vormi",
         "question": "Они продали старые (машина).",
         "choices": ["машинами","машины","машин","машинах"],
         "answer": "машины",
-        "correct": "'машины', sest siin kasutatakse винительный käänet koos küsimusega 'что?'."
+        "correct": "'машины', sest siin kasutatakse винительный käänet koos küsimusega 'что? (mida?)'."
     },
 {
         "name": "Vali õiget nimisõna käänet",
         "question": "(Утро) я никогда не завтракаю.",
         "choices": ["Утре","Утру","Утра","Утром"],
         "answer": "Утром",
-        "correct": "'Утром', sest siin kasutatakse творительный käänet koos küsimusega 'когда?'."
+        "correct": "'Утром', sest siin kasutatakse творительный käänet koos küsimusega 'когда? (millal?)'."
     },
 {
         "name": "Vali õiget nimisõna vormi",
         "question": "Не хочу быть (учитель), хочу быть (тренер).",
         "choices": ["учителем, тренер","учителем, тренером","учителю, тренеру","учителя, тренером"],
         "answer": "учителем, тренером",
-        "correct": "'учителем, тренером', sest pärast sõna Быть on vaja panna творительный käänet, mis vastab siin küsimusele 'кем?'."
+        "correct": "'учителем, тренером', sest pärast sõna Быть on vaja panna творительный käänet, mis vastab siin küsimusele 'кем? (kellega?)'."
     },
 {
         "name": "Vali õiget nimisõna käänet",
@@ -90,7 +90,7 @@ quiz_data = [
         "question": "Моя мама работает ... магазине.",
         "choices": ["в","под","на","из"],
         "answer": "в",
-        "correct": "'в', sest sõna работать vajab предложный käänet, mis vastab siin küsimusele 'где?.'"
+        "correct": "'в', sest sõna работать vajab предложный käänet, mis vastab siin küsimusele 'где? (kus?).'"
     },
 {
         "name": "Vali õiget eessõna",
@@ -104,7 +104,7 @@ quiz_data = [
         "question": "Мы говорили ... погоде.",
         "choices": ["за","о","у","к"],
         "answer": "о",
-        "correct": "'о', sest sõna говорить vajab предложный käänet ning see vastab siin küsimusele 'millest?."
+        "correct": "'о', sest sõna говорить vajab предложный käänet ning see vastab siin küsimusele 'о чём? (millest?)."
     },
 {
         "name": "Vali õiget eessõna",
@@ -112,6 +112,20 @@ quiz_data = [
         "choices": ["На","Ради","Между","Благодаря"],
         "answer": "Благодаря",
         "correct": "'Благодаря', sest see eessõna tähistab 'tänu', 'tõttu', mis tähistab põhjust."
+    },
+{
+        "name": "Vali õiget eessõna",
+        "question": "Таня пришла ... школы.",
+        "choices": ["из","в","перед","мимо"],
+        "answer": "из",
+        "correct": "'из', sest родительный kääne koos selle eessõnaga tähistab lähtekohta ja vastab küsimustele 'откуда? (kust?), из чего? (millest?)'."
+    },
+{
+        "name": "Vali õiget eessõna",
+        "question": "Он уедет ... неделю.",
+        "choices": ["к","через","сквозь","при"],
+        "answer": "через",
+        "correct": "'через', sest siin kasutatakse винительный käänet ajalises tähenduses(pärast), mis vastab küsimusele 'когда? (millal?)'. "
     },
 
 
