@@ -56,7 +56,7 @@ def create_window(previous_window, index, text_files, image_params):
 
     new_window = tk.Toplevel(previous_window)
     new_window.title(f"Teooria - Aken {index + 1}")
-    new_window.geometry("1000x800+0+0")
+    new_window.geometry("1100x800+100+100")
 
     btn_back = ttk.Button(new_window, text="Tagasi", command=lambda: back_to_previous(new_window, previous_window))
     btn_back.place(x=390, y=20, width=110)
@@ -66,7 +66,7 @@ def create_window(previous_window, index, text_files, image_params):
         btn_next.place(x=500, y=20, width=110)
 
     frame = ttk.Frame(new_window)
-    frame.place(x=20, y=50, width=900, height=700)
+    frame.place(x=20, y=50, width=1000, height=700)
 
     canvas = tk.Canvas(frame)
     scrollbar = ttk.Scrollbar(frame, orient="vertical", command=canvas.yview)
@@ -174,7 +174,7 @@ def all_rus(gamesc4):
     gamesc4.withdraw()
     gamesc5 = tk.Toplevel(gamesc4)
     gamesc5.title("Test")
-    gamesc5.geometry("1000x800+100+100")
+    gamesc5.geometry("1100x800+100+100")
 
     #Initializing variables
     score = 0
@@ -272,7 +272,7 @@ def all_rus(gamesc4):
     show_question()
 
     btn_back = ttk.Button(gamesc5, text="Tagasi menüüsse", command=lambda: back_to_previous(gamesc5, gamesc4)) #Button to move back
-    btn_back.place(x=445, y=500, width=110)
+    btn_back.place(x=495, y=500, width=110)
 
 #Function for a theory window
 def theory_est(gamesc2):
@@ -297,7 +297,7 @@ def all_est(gamesc7):
     gamesc7.withdraw()
     gamesc8 = tk.Toplevel(gamesc7)
     gamesc8.title("Test")
-    gamesc8.geometry("1000x800+100+100")
+    gamesc8.geometry("1100x800+100+100")
 
     score2 = 0
     current_question2 = 0
@@ -390,7 +390,7 @@ def all_est(gamesc7):
     show_question()
 
     btn_back = ttk.Button(gamesc8, text="Tagasi menüüsse", command=lambda: back_to_previous(gamesc8, gamesc7))
-    btn_back.place(x=445, y=500, width=110)
+    btn_back.place(x=495, y=500, width=110)
 
 btn = ttk.Button(root_main, text="Vene", command=rus)
 btn.place(x=70, y=100, width=110)

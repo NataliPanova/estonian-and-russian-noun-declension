@@ -111,7 +111,7 @@ quiz_data = [
         "question": "... твоей помощи, я справился с проектом.",
         "choices": ["На","Ради","Между","Благодаря"],
         "answer": "Благодаря",
-        "correct": "'Благодаря', sest see eessõna tähistab 'tänu', 'tõttu', mis tähistab põhjust."
+        "correct": "'Благодаря', sest see on дательный kääne ja selle eessõna tähendus on 'tänu', 'tõttu', mis tähistab põhjust."
     },
 {
         "name": "Vali õiget eessõna",
@@ -127,7 +127,34 @@ quiz_data = [
         "answer": "через",
         "correct": "'через', sest siin kasutatakse винительный käänet ajalises tähenduses(pärast), mis vastab küsimusele 'когда? (millal?)'. "
     },
-
+{
+        "name": "Vali õiget eessõna",
+        "question": "Я познакомился ... ним в прошлом году.",
+        "choices": ["о","навстречу","с","над"],
+        "answer": "с",
+        "correct": "'с', sest sõna (по)знакомиться vajab творительный käänet ja eessõna 'с' ning sel juhul vastab küsimustele 'с кем? (kellega), с чем? (millega?)'. "
+    },
+{
+        "name": "Vali õiget eessõna",
+        "question": "Она осталась ... друзей.",
+        "choices": ["у","для","к","о"],
+        "answer": "у",
+        "correct": "'у', sest see on родительный kääne, mis koos vastava eessõnaga tähistab asukohta ja siin vastab see küsimusele 'у кого? (kelle juures?)'. "
+    },
+{
+        "name": "Vali õiget eessõna",
+        "question": "Дима и Лена отправились ... концерт.",
+        "choices": ["под","в","при","на"],
+        "answer": "на",
+        "correct": "'на', sest see on винительный kääne, mis siin tähistab suunda, kuhu minnakse ja küsimus on 'куда? (kuhu?)'. \nEesti sõnalõpp -LE saab reeglina läbi vene eessnaga HA."
+    },
+{
+        "name": "Vali õiget eessõna",
+        "question": "Она шла ... зонтиком.",
+        "choices": ["без","под","для","после"],
+        "answer": "под",
+        "correct": "'под', sest see on творительный kääne, mis tähendab siin asukohta millegi all ja vastab küsimusele 'где? (kus?)'. "
+    },
 
 ]
 
