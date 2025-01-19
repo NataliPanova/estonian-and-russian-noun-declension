@@ -15,7 +15,7 @@ Selle kaände juures on väga tähtis, millele tegevus on suunatud - kas asjale 
 Анна читает первую интересную книгу. Anna loeb esimest
 huvitavat raamatut.
 
-* Kui винтельный käändes on elusolendit (inimesed, loomad, linnud) tähistav nimisõna, vastab see küsimusele keda? КОГО?
+* Kui винительный käändes on elusolendit (inimesed, loomad, linnud) tähistav nimisõna, vastab see küsimusele keda? КОГО?
 Кого знает Антон? Keda Anton tunneb?
 Антон знает умную Анну. Anton tunneb tarka Annat.
 Кого любит Анна? Keda Anna armastab?
@@ -45,7 +45,7 @@ Tihti kasutatakse koos tegusõnadega
 носить - kandma, переводить - tõlkima, объяснять - seletama,
 заказать - tellima, спросить - küsima, отвечaть - vastama,
 проверять - kontrollima, помнить - mäletama, повторять - kordama,
-получить - saama
+получить - saama, благодарить - tänama
 +
 ЧТО? КОГО? (винительный падеж)
 

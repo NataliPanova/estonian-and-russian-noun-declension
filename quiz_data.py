@@ -75,22 +75,77 @@ quiz_data = [
         "question": "Вероника интересуется (балетом).",
         "choices": ["именительный ","дательный","творительный","родительный"],
         "answer": "творительный",
-        "correct": "'творительный', sest 'интересуется чем?'"
-
+        "correct": "'творительный', sest sõna интересовaться(huvituma) vajab творительный käänet ja küsimus on 'чем? (millega?)'."
+    },
+{
+        "name": "Vali õiget nimisõna käänet",
+        "question": "Девочка рисовала своими (красками).",
+        "choices": ["предложный","винительный","дательный","творительный"],
+        "answer": "творительный",
+        "correct": "'творительный', sest siin käsitletakse vahendit, millega inimene midagi teeb ja küsimus on 'чем? (millega?)'."
     },
     {
         "name": "Vali õiget nimisõna käänet",
-        "question": "Вижу красивый (дом).",
+        "question": "Паша увидел красивый (дом).",
         "choices": ["винительный","предложный","дательный","именительный"],
         "answer": "винительный",
-        "correct": "'винительный', sest ... '"
+        "correct": "'винительный', sest sõna видеть(nägema) tähistab mingit objekti ja vajab винительный käänet.\n Kuna siin objekt on mingi asi, siis küsimus on 'что? (mida?)'."
+    },
+{
+        "name": "Vali õiget nimisõna käänet",
+        "question": "Пациент поблагодарил (доктора) за оказанную помощь.",
+        "choices": ["дательный","винительный","предложный","родительный"],
+        "answer": "винительный",
+        "correct": "'винительный', sest sõna благодарить(tänama) näitab kellele või millele on tegevus suunatud ja vajab винительный käänet. \n Kuna siin objekt on elusolend, siis küsimus on 'кого? (keda?)'."
+    },
+{
+        "name": "Vali õiget nimisõna käänet",
+        "question": "Листья (дерева) стали желтыми.",
+        "choices": ["предложный","творительный","родительный","винительный"],
+        "answer": "родительный",
+        "correct": "'родительный', sest siin on väljendatud objekti kuuluvust teise objekti juurde ja küsimus on 'чего? (mille?)'."
+    },
+{
+        "name": "Vali õiget nimisõna käänet",
+        "question": "У нас больше нет этой (игрушки).",
+        "choices": ["дательный","винительный","именительный","родительный"],
+        "answer": "родительный",
+        "correct": "'родительный', sest siin on väljendatud eitus sõnaga 'нет(ei ole)' ja küsimus on 'нет чего? (ei ole mida?)'."
+    },
+{
+        "name": "Vali õiget nimisõna käänet",
+        "question": "Я подарил цветы (матери).",
+        "choices": ["именительный","дательный","творительный","предложный"],
+        "answer": "дательный",
+        "correct": "'дательный', sest see näitab kellele tegevus on suunatud ja küsimus on 'кому? (kellele?)'."
+    },
+{
+        "name": "Vali õiget nimisõna käänet",
+        "question": "Она ходила по (магазинам) за продуктами.",
+        "choices": ["дательный","родительный","предложный","творительный"],
+        "answer": "дательный",
+        "correct": "'дательный', sest siin on kasutatud eessõna 'по', mis on tähenduses mööda ja vajab дательный käänet."
+    },
+{
+        "name": "Vali õiget nimisõna käänet",
+        "question": "Мы разговаривали о прошедшем (лете).",
+        "choices": ["творительный","родительный","дательный","предложный"],
+        "answer": "предложный",
+        "correct": "предложный'', sest kui millest räägitakse, kasutatakse предложный käänet koos eessõnaga 'о(об)' ning küsimus on 'о ком? о чем? (kellest? millest?)'."
+    },
+{
+        "name": "Vali õiget nimisõna käänet",
+        "question": "Мы долго гуляли в огромном (музее).",
+        "choices": ["предложный","творительный","родительный","именительный"],
+        "answer": "предложный",
+        "correct": "'предложный', sest предложный kääne koos eessõnaga 'в' tähistab kellegi või millegi asukohta ja vastab küsimusele 'где? (kus?)'."
     },
 {
         "name": "Vali õiget eessõna",
         "question": "Моя мама работает ... магазине.",
         "choices": ["в","под","на","из"],
         "answer": "в",
-        "correct": "'в', sest sõna работать vajab предложный käänet, mis vastab siin küsimusele 'где? (kus?).'"
+        "correct": "'в', sest sõna работать(töötama) vajab предложный käänet, mis vastab siin küsimusele 'где? (kus?)'."
     },
 {
         "name": "Vali õiget eessõna",
@@ -104,7 +159,7 @@ quiz_data = [
         "question": "Мы говорили ... погоде.",
         "choices": ["за","о","у","к"],
         "answer": "о",
-        "correct": "'о', sest sõna говорить vajab предложный käänet ning see vastab siin küsimusele 'о чём? (millest?)."
+        "correct": "'о', sest sõna говорить(rääkima) vajab предложный käänet ning see vastab siin küsimusele 'о чём? (millest?)."
     },
 {
         "name": "Vali õiget eessõna",

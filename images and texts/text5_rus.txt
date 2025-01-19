@@ -14,7 +14,7 @@ d)Tegevuse viisi (eesti keeleski harilikult olev kääne või viisimäärsõna):
 e)Olekut või seisundit (eesti keeles saav või olev kääne):
 Она работает лаборанткой.
 f)Kaudsihitist paljude verbide puhul, esinedes verbi rektsioonilise laiendina:
-управлять, руководить, командовать, владеть, заниматься, интересоватсья, наслаждаться.
+управлять, руководить, командовать, владеть, заниматься, интересоваться, наслаждаться.
 Он хорошо владеет русским языком.  Кристина занимается лыжным спортом.
 
 [[IMG1]]
