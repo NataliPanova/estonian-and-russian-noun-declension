@@ -68,7 +68,7 @@ quiz_data = [
         "question": "Не хочу быть (учитель), хочу быть (тренер).",
         "choices": ["учителем, тренер","учителем, тренером","учителю, тренеру","учителя, тренером"],
         "answer": "учителем, тренером",
-        "correct": "'учителем, тренером', sest pärast sõna Быть on vaja panna творительный käänet, mis vastab siin küsimusele 'кем? (kellega?)'."
+        "correct": "'учителем, тренером', sest pärast sõna Быть on vaja panna творительный käänet, \nmis vastab siin küsimusele 'кем? (kellega?)'."
     },
 {
         "name": "Vali õiget nimisõna käänet",
@@ -131,14 +131,14 @@ quiz_data = [
         "question": "Мы разговаривали о прошедшем (лете).",
         "choices": ["творительный","родительный","дательный","предложный"],
         "answer": "предложный",
-        "correct": "предложный'', sest kui millest räägitakse, kasutatakse предложный käänet koos eessõnaga 'о(об)' ning küsimus on 'о ком? о чем? (kellest? millest?)'."
+        "correct": "предложный'', sest kui millest räägitakse, kasutatakse предложный käänet koos eessõnaga 'о(об)' \nning küsimus on 'о ком? о чём? (kellest? millest?)'."
     },
 {
         "name": "Vali õiget nimisõna käänet",
         "question": "Мы долго гуляли в огромном (музее).",
         "choices": ["предложный","творительный","родительный","именительный"],
         "answer": "предложный",
-        "correct": "'предложный', sest предложный kääne koos eessõnaga 'в' tähistab kellegi või millegi asukohta ja vastab küsimusele 'где? (kus?)'."
+        "correct": "'предложный', sest предложный kääne koos eessõnaga 'в' tähistab kellegi või millegi asukohta\nja vastab küsimusele 'где? (kus?)'."
     },
 {
         "name": "Vali õiget eessõna",
@@ -173,7 +173,7 @@ quiz_data = [
         "question": "Таня пришла ... школы.",
         "choices": ["из","в","перед","мимо"],
         "answer": "из",
-        "correct": "'из', sest родительный kääne koos selle eessõnaga tähistab lähtekohta ja vastab küsimustele 'откуда? (kust?), из чего? (millest?)'."
+        "correct": "'из', sest родительный kääne koos selle eessõnaga tähistab lähtekohta\nja vastab küsimustele 'откуда? (kust?), из чего? (millest?)'."
     },
 {
         "name": "Vali õiget eessõna",
@@ -187,14 +187,14 @@ quiz_data = [
         "question": "Я познакомился ... ним в прошлом году.",
         "choices": ["о","навстречу","с","над"],
         "answer": "с",
-        "correct": "'с', sest sõna (по)знакомиться vajab творительный käänet ja eessõna 'с' ning sel juhul vastab küsimustele 'с кем? (kellega), с чем? (millega?)'. "
+        "correct": "'с', sest sõna (по)знакомиться vajab творительный käänet ja eessõna 'с' \nning sel juhul vastab küsimustele 'с кем? (kellega), с чем? (millega?)'. "
     },
 {
         "name": "Vali õiget eessõna",
         "question": "Она осталась ... друзей.",
         "choices": ["у","для","к","о"],
         "answer": "у",
-        "correct": "'у', sest see on родительный kääne, mis koos vastava eessõnaga tähistab asukohta ja siin vastab see küsimusele 'у кого? (kelle juures?)'. "
+        "correct": "'у', sest see on родительный kääne, mis koos vastava eessõnaga tähistab asukohta\nSiin vastab родительный kääne küsimusele 'у кого? (kelle juures?)'. "
     },
 {
         "name": "Vali õiget eessõna",

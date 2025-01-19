@@ -13,13 +13,13 @@ def resource_path(relative_path):
 
 root_main = tk.Tk()
 root_main.title("Käänded")
-root_main.geometry("250x200+100+100")
+root_main.geometry("1100x800+100+100")
 
-global_font = ("Times New Roman", 13)
+global_font = ("Times New Roman", 14)
 root_main.option_add("*Font", global_font)
 
-button_font = ("Times New Roman", 13)
-root_main.option_add("*TButton.Font", button_font)
+style = ttk.Style()
+style.configure("TButton", font=("Times New Roman", 16))
 
 def back_to_main(current_window):
     current_window.withdraw() #Hiding the window, but not destroying it
@@ -31,11 +31,11 @@ def back_to_previous(current_window, previous_window):
     previous_window.deiconify() #Showing the hidden window
 
 # List of text filenames for each window
-text_files_est = ['test.txt', 'text.txt', 'text1_rus.txt']  # Add more filenames as needed
+text_files_est = ['test.txt', 'text.txt']  # Add more filenames as needed
 
 image_params_est = [ [{'file': '14käänet.png', 'size': (350, 250)}, {'file': '14käänet2.png', 'size': (450, 250)}],
-               [{'file': 'tabel1_rus.png', 'size': (300, 200)}, {'file': 'mitmus.png', 'size': (250, 200)}],
-               [{'file': 'sugu_rus.png', 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
+              # [{'file': 'tabel1_rus.png', 'size': (300, 200)}, {'file': 'mitmus.png', 'size': (250, 200)}],
+              # [{'file': 'sugu_rus.png', 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
             ]
 
 text_files_rus = ['text1_rus.txt', 'text2_rus.txt', 'text3_rus.txt', 'text4_rus.txt', 'text5_rus.txt', 'text6_rus.txt']  # Add more filenames as needed
@@ -55,15 +55,15 @@ def create_window(previous_window, index, text_files, image_params):
     previous_window.withdraw()  # Hide the previous window
 
     new_window = tk.Toplevel(previous_window)
-    new_window.title(f"Teooria - Aken {index + 1}")
+    new_window.title(f"Õppematerjalid - Aken {index + 1}")
     new_window.geometry("1100x800+100+100")
 
     btn_back = ttk.Button(new_window, text="Tagasi", command=lambda: back_to_previous(new_window, previous_window))
-    btn_back.place(x=390, y=20, width=110)
+    btn_back.place(x=390, y=10, width=110, height=35)
 
     if index < len(text_files) - 1:
         btn_next = ttk.Button(new_window, text="Edasi", command=lambda: create_window(new_window, index + 1, text_files, image_params))
-        btn_next.place(x=500, y=20, width=110)
+        btn_next.place(x=500, y=10, width=110, height=35)
 
     frame = ttk.Frame(new_window)
     frame.place(x=20, y=50, width=1000, height=700)
@@ -99,7 +99,7 @@ def create_window(previous_window, index, text_files, image_params):
 
     for i, part in enumerate(parts):
         if i == 0:
-            label = tk.Label(scrollable_frame, text=part.strip(), wraplength=700, justify=tk.LEFT)#, font=text_font)
+            label = tk.Label(scrollable_frame, text=part.strip(), wraplength=900, justify=tk.LEFT)#, font=text_font)
             label.pack(anchor="w", pady=10)
         else:
             marker, text = part.split(']]', 1)
@@ -125,31 +125,31 @@ def rus():
     root_main.withdraw() #Hiding the main window, but not destroying it
     gamesc = tk.Toplevel(root_main) #Create a window on top
     gamesc.title("Vene") #New window's name
-    gamesc.geometry("250x200+100+100") #New window's size
+    gamesc.geometry("1100x800+100+100") #New window's size
 
     btn_theory = ttk.Button(gamesc, text="Õppematerjalid", command=lambda: theory_rus(gamesc))
-    btn_theory.place(x=70, y=60, width=110)
+    btn_theory.place(x=450, y=300, width=200, height=50)
 
     btn_test = ttk.Button(gamesc, text="Test", command=lambda: test_rus(gamesc))
-    btn_test.place(x=70, y=100, width=110)
+    btn_test.place(x=450, y=375, width=200, height=50)
 
     btn_back = ttk.Button(gamesc, text="Tagasi", command=lambda: back_to_main(gamesc))
-    btn_back.place(x=70, y=140, width=110)
+    btn_back.place(x=450, y=450, width=200, height=50)
 
 def est():
     root_main.withdraw() #Hiding the main window, but not destroying it
     gamesc2 = tk.Toplevel(root_main)
     gamesc2.title("Eesti")
-    gamesc2.geometry("250x200+100+100")
+    gamesc2.geometry("1100x800+100+100")
 
     btn_theory = ttk.Button(gamesc2, text="Õppematerjalid", command=lambda: theory_est(gamesc2)) #Button for moving to the theory window
-    btn_theory.place(x=70, y=60, width=110) #Button place
+    btn_theory.place(x=450, y=300, width=200, height=50) #Button place
 
     btn_test = ttk.Button(gamesc2, text="Test", command=lambda: test_est(gamesc2)) #Button to move for a test window
-    btn_test.place(x=70, y=100, width=110) #Button place
+    btn_test.place(x=450, y=375, width=200, height=50) #Button place
 
     btn_back = ttk.Button(gamesc2, text="Tagasi", command=lambda: back_to_main(gamesc2)) #Button to move back
-    btn_back.place(x=70, y=140, width=110) #Button place
+    btn_back.place(x=450, y=450, width=200, height=50) #Button place
 
 #Function for a theory window
 def theory_rus(gamesc):
@@ -161,13 +161,13 @@ def test_rus(gamesc):
     gamesc.withdraw()
     gamesc4 = tk.Toplevel(gamesc)
     gamesc4.title("Test")
-    gamesc4.geometry("250x200+100+100")
+    gamesc4.geometry("1100x800+100+100")
 
     btn_next = ttk.Button(gamesc4, text="Kõik käänded", command=lambda: all_rus(gamesc4))
-    btn_next.place(x=70, y=60, width=110)
+    btn_next.place(x=450, y=300, width=200, height=50)
 
     btn_back = ttk.Button(gamesc4, text="Tagasi", command=lambda: back_to_previous(gamesc4, gamesc))
-    btn_back.place(x=70, y=100, width=110)
+    btn_back.place(x=450, y=375, width=200, height=50)
 
 
 def all_rus(gamesc4):
@@ -272,7 +272,7 @@ def all_rus(gamesc4):
     show_question()
 
     btn_back = ttk.Button(gamesc5, text="Tagasi menüüsse", command=lambda: back_to_previous(gamesc5, gamesc4)) #Button to move back
-    btn_back.place(x=495, y=500, width=110)
+    btn_back.place(x=450, y=700, width=200, height=40)
 
 #Function for a theory window
 def theory_est(gamesc2):
@@ -284,13 +284,13 @@ def test_est(gamesc2):
     gamesc2.withdraw()
     gamesc7 = tk.Toplevel(gamesc2)
     gamesc7.title("Test")
-    gamesc7.geometry("250x200+100+100")
+    gamesc7.geometry("1100x800+100+100")
 
     btn_next = ttk.Button(gamesc7, text="Kõik käänded", command=lambda: all_est(gamesc7))
-    btn_next.place(x=70, y=60, width=110)
+    btn_next.place(x=450, y=300, width=200, height=50)
 
     btn_back = ttk.Button(gamesc7, text="Tagasi", command=lambda: back_to_previous(gamesc7, gamesc2))
-    btn_back.place(x=70, y=100, width=110)
+    btn_back.place(x=450, y=375, width=200, height=50)
 
 
 def all_est(gamesc7):
@@ -390,12 +390,12 @@ def all_est(gamesc7):
     show_question()
 
     btn_back = ttk.Button(gamesc8, text="Tagasi menüüsse", command=lambda: back_to_previous(gamesc8, gamesc7))
-    btn_back.place(x=495, y=500, width=110)
+    btn_back.place(x=450, y=700, width=200, height=40)
 
-btn = ttk.Button(root_main, text="Vene", command=rus)
-btn.place(x=70, y=100, width=110)
+btn = ttk.Button(root_main, text="Vene keel", command=rus, style="TButton")
+btn.place(x=450, y=300, width=200, height=50)
 
-btn2 = ttk.Button(root_main, text="Eesti", command=est)
-btn2.place(x=70, y=60, width=110)
+btn2 = ttk.Button(root_main, text="Eesti keel", command=est, style="TButton")
+btn2.place(x=450, y=375, width=200, height=50)
 
 root_main.mainloop() #Cycle end
