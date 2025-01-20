@@ -57,7 +57,7 @@ quiz_data = [
         "correct": "'машины', sest siin kasutatakse винительный käänet koos küsimusega 'что? (mida?)'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õiget nimisõna vormi",
         "question": "(Утро) я никогда не завтракаю.",
         "choices": ["Утре","Утру","Утра","Утром"],
         "answer": "Утром",
