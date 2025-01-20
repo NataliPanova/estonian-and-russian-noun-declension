@@ -5,15 +5,29 @@ from quiz_data import quiz_data
 from quiz_data import quiz_data2
 from PIL import Image, ImageTk
 import os
+import sys
 
 #Function to get the path
+#def resource_path(relative_path):
+  #  base_path = os.path.abspath("images and texts") #Path for images and texts
+  #  return os.path.join(base_path, relative_path)
+
 def resource_path(relative_path):
-    base_path = os.path.abspath("images and texts") #Path for images and texts
+    #Check if the local path exists (to work on your PC)
+    local_path = os.path.abspath(relative_path)
+    if os.path.exists(local_path):
+        return local_path
+
+    #If run from PyInstaller
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")  # Резервный случай
     return os.path.join(base_path, relative_path)
 
 root_main = tk.Tk()
 root_main.title("Käänded")
-root_main.geometry("1100x800+100+100")
+root_main.geometry("1100x800+100+0")
 
 global_font = ("Times New Roman", 14)
 root_main.option_add("*Font", global_font)
@@ -56,7 +70,7 @@ def create_window(previous_window, index, text_files, image_params):
 
     new_window = tk.Toplevel(previous_window)
     new_window.title(f"Õppematerjalid - Aken {index + 1}")
-    new_window.geometry("1100x800+100+100")
+    new_window.geometry("1100x800+100+0")
 
     btn_back = ttk.Button(new_window, text="Tagasi", command=lambda: back_to_previous(new_window, previous_window))
     btn_back.place(x=390, y=10, width=110, height=35)
@@ -90,7 +104,7 @@ def create_window(previous_window, index, text_files, image_params):
 
     new_window.bind("<Map>", bind_mouse_wheel)  # Bind mouse wheel event when window is shown again
 
-    with open(resource_path(text_files[index]), encoding='utf-8') as file:
+    with open(resource_path(f"images and texts/{text_files[index]}"), encoding='utf-8') as file:
         content = file.read()
 
     parts = content.split('[[IMG')  # Split the text at markers
@@ -108,7 +122,7 @@ def create_window(previous_window, index, text_files, image_params):
             # Load and display the image
             if img_index < len(image_params[index]):  # Check if img_index is within range
                 img_info = image_params[index][img_index]
-                image = Image.open(resource_path(img_info['file']))
+                image = Image.open(resource_path(f"images and texts/{img_info['file']}"))
                 resize_image = image.resize(img_info['size'])  # Resize as needed
                 img = ImageTk.PhotoImage(resize_image)
 
@@ -125,7 +139,7 @@ def rus():
     root_main.withdraw() #Hiding the main window, but not destroying it
     gamesc = tk.Toplevel(root_main) #Create a window on top
     gamesc.title("Vene") #New window's name
-    gamesc.geometry("1100x800+100+100") #New window's size
+    gamesc.geometry("1100x800+100+0") #New window's size
 
     btn_theory = ttk.Button(gamesc, text="Õppematerjalid", command=lambda: theory_rus(gamesc))
     btn_theory.place(x=450, y=300, width=200, height=50)
@@ -140,7 +154,7 @@ def est():
     root_main.withdraw() #Hiding the main window, but not destroying it
     gamesc2 = tk.Toplevel(root_main)
     gamesc2.title("Eesti")
-    gamesc2.geometry("1100x800+100+100")
+    gamesc2.geometry("1100x800+100+0")
 
     btn_theory = ttk.Button(gamesc2, text="Õppematerjalid", command=lambda: theory_est(gamesc2)) #Button for moving to the theory window
     btn_theory.place(x=450, y=300, width=200, height=50) #Button place
@@ -161,7 +175,7 @@ def test_rus(gamesc):
     gamesc.withdraw()
     gamesc4 = tk.Toplevel(gamesc)
     gamesc4.title("Test")
-    gamesc4.geometry("1100x800+100+100")
+    gamesc4.geometry("1100x800+100+0")
 
     btn_next = ttk.Button(gamesc4, text="Kõik käänded", command=lambda: all_rus(gamesc4))
     btn_next.place(x=450, y=300, width=200, height=50)
@@ -174,7 +188,7 @@ def all_rus(gamesc4):
     gamesc4.withdraw()
     gamesc5 = tk.Toplevel(gamesc4)
     gamesc5.title("Test")
-    gamesc5.geometry("1100x800+100+100")
+    gamesc5.geometry("1100x800+100+0")
 
     #Initializing variables
     score = 0
@@ -284,7 +298,7 @@ def test_est(gamesc2):
     gamesc2.withdraw()
     gamesc7 = tk.Toplevel(gamesc2)
     gamesc7.title("Test")
-    gamesc7.geometry("1100x800+100+100")
+    gamesc7.geometry("1100x800+100+0")
 
     btn_next = ttk.Button(gamesc7, text="Kõik käänded", command=lambda: all_est(gamesc7))
     btn_next.place(x=450, y=300, width=200, height=50)
@@ -297,7 +311,7 @@ def all_est(gamesc7):
     gamesc7.withdraw()
     gamesc8 = tk.Toplevel(gamesc7)
     gamesc8.title("Test")
-    gamesc8.geometry("1100x800+100+100")
+    gamesc8.geometry("1100x800+100+0")
 
     score2 = 0
     current_question2 = 0
