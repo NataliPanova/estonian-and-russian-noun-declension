@@ -390,5 +390,4 @@ quiz_data2 = [
         "answer": "-tesse/-desse/-esse",
         "correct": "'-tesse/-desse/-esse'."
     },
-
 ]
