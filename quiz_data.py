@@ -1,210 +1,210 @@
 
 quiz_data = [
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "У нас много (студенты).",
         "choices": ["студентах","студента","студентов","студентами"],
         "answer": "студентов",
         "correct": "'студентов', sest Много студентов —  родительный kääne, mis vastab siin küsimusele 'кого? (keda?)'."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Мы плаваем в (море).",
         "choices": ["морю","моря","морем","море"],
         "answer": "море",
         "correct": "'море', sest В море —  предложный kääne, mis vastab siin küsimusele 'где? (kus?)'."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "У (дочь) есть хорошая подруга.",
         "choices": ["дочерьми","дочерью","дочи","дочери"],
         "answer": "дочери",
         "correct": "'дочери', sest У дочери — родительный kääne, mis vastab siin küsimusele 'у кого? (kellel?)'."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Мои родители не любят летать на (самолёты).",
         "choices": ["самолётах","самолётами","самолётов","самолётам"],
         "answer": "самолётах",
         "correct": "'самолётах', sest На самолётах — предложный kääne, mis vastab siin küsimusele 'на чём? (mille peal?)'. "
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Мы готовимся к (праздник).",
         "choices": ["праздник","празднику","праздником","праздника"],
         "answer": "празднику",
         "correct": "'празднику', sest К празднику — дательный kääne, mis vastab siin küsimusele 'к чему? (milleks?)'."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "В (четверг) она не работает.",
         "choices": ["четверге","четверга","четверг","четвергу"],
         "answer": "четверг",
         "correct": "'четверг', sest В четверг — винительный kääne, mis vastab siin küsimusele 'когда? (millal?)'."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Вчера мы ходили к (врач).",
         "choices": ["врачом","враче","врача","врачу"],
         "answer": "врачу",
         "correct": "'врачу', sest К врачу — дательный kääne, mis vastab siin küsimusele 'к кому? (kelle juurde?)'."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Они продали старые (машина).",
         "choices": ["машинами","машины","машин","машинах"],
         "answer": "машины",
         "correct": "'машины', sest siin kasutatakse винительный käänet koos küsimusega 'что? (mida?)'."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "(Утро) я никогда не завтракаю.",
         "choices": ["Утре","Утру","Утра","Утром"],
         "answer": "Утром",
         "correct": "'Утром', sest siin kasutatakse творительный käänet koos küsimusega 'когда? (millal?)'."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Не хочу быть (учитель), хочу быть (тренер).",
         "choices": ["учителем, тренер","учителем, тренером","учителю, тренеру","учителя, тренером"],
         "answer": "учителем, тренером",
         "correct": "'учителем, тренером', sest pärast sõna Быть on vaja panna творительный käänet, \nmis vastab siin küsimusele 'кем? (kellega?)'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Вероника интересуется (балетом).",
-        "choices": ["именительный ","дательный","творительный","родительный"],
+        "choices": ["именительный(кто? что?) ","дательный(кому? чему?)","творительный(кем? чем?)","родительный(кого? чего?)"],
         "answer": "творительный",
         "correct": "'творительный', sest sõna интересовaться(huvituma) vajab творительный käänet ja küsimus on 'чем? (millega?)'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Девочка рисовала своими (красками).",
-        "choices": ["предложный","винительный","дательный","творительный"],
-        "answer": "творительный",
+        "choices": ["предложный","винительный","дательный(кому? чему?)","творительный(кем? чем?)"],
+        "answer": "творительный(кем? чем?)",
         "correct": "'творительный', sest siin käsitletakse vahendit, millega inimene midagi teeb ja küsimus on 'чем? (millega?)'."
     },
     {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Паша увидел красивый (дом).",
-        "choices": ["винительный","предложный","дательный","именительный"],
+        "choices": ["винительный","предложный","дательный(кому? чему?)","именительный(кто? что?)"],
         "answer": "винительный",
         "correct": "'винительный', sest sõna видеть(nägema) tähistab mingit objekti ja vajab винительный käänet.\n Kuna siin objekt on mingi asi, siis küsimus on 'что? (mida?)'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Пациент поблагодарил (доктора) за оказанную помощь.",
-        "choices": ["дательный","винительный","предложный","родительный"],
+        "choices": ["дательный(кому? чему?)","винительный","предложный","родительный"],
         "answer": "винительный",
         "correct": "'винительный', sest sõna благодарить(tänama) näitab kellele või millele on tegevus suunatud ja vajab винительный käänet. \n Kuna siin objekt on elusolend, siis küsimus on 'кого? (keda?)'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Листья (дерева) стали желтыми.",
         "choices": ["предложный","творительный","родительный","винительный"],
         "answer": "родительный",
         "correct": "'родительный', sest siin on väljendatud objekti kuuluvust teise objekti juurde ja küsimus on 'чего? (mille?)'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "У нас больше нет этой (игрушки).",
-        "choices": ["дательный","винительный","именительный","родительный"],
+        "choices": ["дательный(кому? чему?)","винительный","именительный(кто? что?)","родительный"],
         "answer": "родительный",
         "correct": "'родительный', sest siin on väljendatud eitus sõnaga 'нет(ei ole)' ja küsimus on 'нет чего? (ei ole mida?)'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Я подарил цветы (матери).",
-        "choices": ["именительный","дательный","творительный","предложный"],
-        "answer": "дательный",
+        "choices": ["именительный(кто? что?)","дательный(кому? чему?)","творительный(кем? чем?)","предложный"],
+        "answer": "дательный(кому? чему?)",
         "correct": "'дательный', sest see näitab kellele tegevus on suunatud ja küsimus on 'кому? (kellele?)'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Она ходила по (магазинам) за продуктами.",
-        "choices": ["дательный","родительный","предложный","творительный"],
-        "answer": "дательный",
+        "choices": ["дательный(кому? чему?)","родительный","предложный","творительный(кем? чем?)"],
+        "answer": "дательный(кому? чему?)",
         "correct": "'дательный', sest siin on kasutatud eessõna 'по', mis on tähenduses mööda ja vajab дательный käänet."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Мы разговаривали о прошедшем (лете).",
-        "choices": ["творительный","родительный","дательный","предложный"],
+        "choices": ["творительный","родительный","дательный(кому? чему?)","предложный"],
         "answer": "предложный",
         "correct": "предложный'', sest kui millest räägitakse, kasutatakse предложный käänet koos eessõnaga 'о(об)' \nning küsimus on 'о ком? о чём? (kellest? millest?)'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Мы долго гуляли в огромном (музее).",
-        "choices": ["предложный","творительный","родительный","именительный"],
+        "choices": ["предложный","творительный","родительный","именительный(кто? что?)"],
         "answer": "предложный",
         "correct": "'предложный', sest предложный kääne koos eessõnaga 'в' tähistab kellegi või millegi asukohta\nja vastab küsimusele 'где? (kus?)'."
     },
 {
-        "name": "Vali õiget eessõna",
+        "name": "Vali õige eessõna",
         "question": "Моя мама работает ... магазине.",
         "choices": ["в","под","на","из"],
         "answer": "в",
         "correct": "'в', sest sõna работать(töötama) vajab предложный käänet, mis vastab siin küsimusele 'где? (kus?)'."
     },
 {
-        "name": "Vali õiget eessõna",
+        "name": "Vali õige eessõna",
         "question": "Мы идем ... улице.",
         "choices": ["у","через","по","с"],
         "answer": "по",
         "correct": "'по', sest siin kasutatakse дательный käänet tähenduses 'mööda'."
     },
 {
-        "name": "Vali õiget eessõna",
+        "name": "Vali õige eessõna",
         "question": "Мы говорили ... погоде.",
         "choices": ["за","о","у","к"],
         "answer": "о",
         "correct": "'о', sest sõna говорить(rääkima) vajab предложный käänet ning see vastab siin küsimusele 'о чём? (millest?)."
     },
 {
-        "name": "Vali õiget eessõna",
+        "name": "Vali õige eessõna",
         "question": "... твоей помощи, я справился с проектом.",
         "choices": ["На","Ради","Между","Благодаря"],
         "answer": "Благодаря",
         "correct": "'Благодаря', sest see on дательный kääne ja selle eessõna tähendus on 'tänu', 'tõttu', mis tähistab põhjust."
     },
 {
-        "name": "Vali õiget eessõna",
+        "name": "Vali õige eessõna",
         "question": "Таня пришла ... школы.",
         "choices": ["из","в","перед","мимо"],
         "answer": "из",
         "correct": "'из', sest родительный kääne koos selle eessõnaga tähistab lähtekohta\nja vastab küsimustele 'откуда? (kust?), из чего? (millest?)'."
     },
 {
-        "name": "Vali õiget eessõna",
+        "name": "Vali õige eessõna",
         "question": "Он уедет ... неделю.",
         "choices": ["к","через","сквозь","при"],
         "answer": "через",
         "correct": "'через', sest siin kasutatakse винительный käänet ajalises tähenduses(pärast), mis vastab küsimusele 'когда? (millal?)'. "
     },
 {
-        "name": "Vali õiget eessõna",
+        "name": "Vali õige eessõna",
         "question": "Я познакомился ... ним в прошлом году.",
         "choices": ["о","навстречу","с","над"],
         "answer": "с",
         "correct": "'с', sest sõna (по)знакомиться vajab творительный käänet ja eessõna 'с' \nning sel juhul vastab küsimustele 'с кем? (kellega), с чем? (millega?)'. "
     },
 {
-        "name": "Vali õiget eessõna",
+        "name": "Vali õige eessõna",
         "question": "Она осталась ... друзей.",
         "choices": ["у","для","к","о"],
         "answer": "у",
         "correct": "'у', sest see on родительный kääne, mis koos vastava eessõnaga tähistab asukohta\nSiin vastab родительный kääne küsimusele 'у кого? (kelle juures?)'. "
     },
 {
-        "name": "Vali õiget eessõna",
+        "name": "Vali õige eessõna",
         "question": "Дима и Лена отправились ... концерт.",
         "choices": ["под","в","при","на"],
         "answer": "на",
         "correct": "'на', sest see on винительный kääne, mis siin tähistab suunda, kuhu minnakse ja küsimus on 'куда? (kuhu?)'. \nEesti sõnalõpp -LE saab reeglina läbi vene eessnaga HA."
     },
 {
-        "name": "Vali õiget eessõna",
+        "name": "Vali õige eessõna",
         "question": "Она шла ... зонтиком.",
         "choices": ["без","под","для","после"],
         "answer": "под",
@@ -216,179 +216,179 @@ quiz_data = [
 
 quiz_data2 = [
     {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Nädalavahetustel me lähme (maa).",
         "choices": ["maasse","maal","maale","maas"],
         "answer": "maale",
         "correct": "'maale', sest see on alaleütlev kääne. Selles olukorras küsimusele 'kuhu?' vastame alaleütleva käändega."
     },
     {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Mari ja Jüri lähevad täna õhtul (teater).",
         "choices": ["teatrisse","teatrist","teatrile","teatris"],
         "answer": "teatrisse",
         "correct": "'teatrisse', sest see on sisseütlev kääne. Selles küsimuses küsimusele 'kuhu?' vastame sisseütleva käändega. "
     },
     {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Ma istun (diivan). ",
         "choices": ["diivanile","diivanil","diivanist","diivanisse"],
         "answer": "diivanil",
         "correct": "'diivanil', sest see on alalütlev kääne. Siin küsimusele 'kus?' vastame alalütleva käändega."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Mina elan (Eesti).",
         "choices": ["Eestil","Eestiga","Eesti","Eestis"],
         "answer": "Eestis",
         "correct": "'Eestis', sest see on seesütlev kääne. Siin küsimusele 'kus?' vastame seesütleva käändega."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Ta pani raamatu (laud).",
         "choices": ["lauale", "laual", "lauast","lauda"],
         "answer": "lauale",
         "correct": "'lauale', sest see on alaleütlev kääne. Siin küsimusele 'kuhu?' vastame alaleütleva käändega."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Me jõudsime lõpuks (jõgi).",
         "choices": ["jõest", "jõel", "jõgi", "jõeni"],
         "answer": "jõeni",
         "correct": "'jõeni', sest see on rajav kääne. Küsimusele 'milleni?' vastame rajava käändega."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Ta lahkus kodust ilma (võti).",
         "choices": ["võtmega", "võtmeid", "võtmeta", "võtme"],
         "answer": "võtmeta",
         "correct": "'võtmeta', sest see on ilmaütlev kääne, mis tähistab millegi puudumist. "
     },
 {
-        "name": "Vali nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Me ostsime turult värskeid (õunad).",
         "choices": ["õunu", "õunte", "õuntest", "õuntena"],
         "answer": "õunu",
         "correct": "'õunu', see on mitmuse osastava käändevorm, mis tähistab mingit hulka."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Ma saatsin kutsed kõigile (külalised).",
         "choices": ["külalistest", "külalistesse", "külalisteks", "külalistele" ],
         "answer": "külalistele",
         "correct": "'külalistele', sest see on mitmuse alaleütlev käändevorm ja esitav küsimus on 'kellele?'."
     },
 {
-        "name": "Vali õiget nimisõna vormi",
+        "name": "Vali õige nimisõna vorm",
         "question": "Tema rääkis pikalt oma (probleemid).",
         "choices": ["probleeme", "probleemidena","probleemidest", "probleemidega" ],
         "answer": "probleemidest",
         "correct": "'probleemidest', sest see on mitmuse seestütleva käändevorm ja küsimus on 'millest?'."
     },
     {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Me läheme (ujulasse).",
         "choices": ["sisseütlev","seesütlev","seestütlev","rajav"],
         "answer": "sisseütlev",
         "correct": "'sisseütlev', sest nimisõna käändelõpp on '-sse'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'majadeni?' ",
         "choices": ["saav","rajav","alaleütlev", "omastav"],
         "answer": "rajav",
         "correct": "'rajav', sest nimisõna käändelõpp on '-ni'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'koeraga'? ",
         "choices": ["kaasaütlev", "saav", "olev", "rajav" ],
         "answer": "kaasaütlev",
         "correct": "'kaasaütlev', sest nimisõna käändelõpp on '-ga'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'raamatut'?",
         "choices": ["omastav", "nimetav", "osastav", "ilmaütlev"],
         "answer": "osastav",
         "correct": "'osastav', sest nimisõna käändelõpp on '-t'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Ma helistan (sõbrale).",
         "choices": ["alalütlev", "alaleütlev", "sisseütlev", "kaasaütlev" ],
         "answer": "alaleütlev",
         "correct": "'alaleütlev', sest nimisõna käändelõpp on '-le'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'toolid'?",
         "choices": ["nimetav", "osastav", "omastav", "olev" ],
         "answer": "nimetav",
         "correct": "'nimetav', sest see on mitmuse nimetav käändevorm, mis moodustub ains. om. + d viisil. "
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'õpilastena'?",
         "choices": ["olev", "ilmaütlev", "saav", "kaasaütlev"],
         "answer": "olev",
         "correct": "'olev', sest nimisõna käändelõpp on '-na'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Me sõidame läbi (linnade).",
         "choices": ["alaleütlev", "osastav", "rajav", "omastav" ],
         "answer": "omastav",
         "correct": "'omastav', sest see on nimisõna mitmuse omastava käändevorm, mis moodustub ains. os. + te/de viisil."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'lugudest'?",
         "choices": ["saav", "sisseütlev", "seestütlev", "seesütlev"],
         "answer": "seestütlev",
         "correct": "'seestütlev', sest nimisõna käändelõpp on '-st'."
     },
 {
-        "name": "Vali õiget nimisõna käänet",
+        "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'muusikuteks'?",
         "choices": ["nimetav" ,"saav", "alaleütlev", "olev"],
         "answer": "saav",
         "correct": "'saav', sest see on nimisõna mitmuse saava käändevorm, mis moodustub ains. om. + ks viisil."
     },
 {
-        "name": "Vali õiget käändelõppu",
+        "name": "Vali õige käändelõpp",
         "question": "Mis käändelõpp on 'ilmaütlev' käändel ainsuses?",
         "choices": ["-ta", "-ga", "-ks", "-lt" ],
         "answer": "-ta",
-        "correct": "'-ta'"
+        "correct": "'-ta'."
     },
 {
-        "name": "Vali õiget käändelõppu",
+        "name": "Vali õiget käändelõpp",
         "question": "Mis käändelõpp on 'seestütlev' käändel ainsuses?",
         "choices": ["-s", "-st", "-sse", "-ni" ],
         "answer": "-st",
-        "correct": "'-st'"
+        "correct": "'-st'."
     },
 {
-        "name": "Vali õiget käändelõppu",
+        "name": "Vali õige käändelõpp",
         "question": "Mis käändelõpp on 'alaleülev' käändel ainsuses?",
         "choices": ["-le", "-ga", "-l", "-lt"],
         "answer": "-le",
-        "correct": "'-le'"
+        "correct": "'-le'."
     },
 {
-        "name": "Vali õiget käändelõppu",
+        "name": "Vali õige käändelõpp",
         "question": "Mis käändelõpp on 'kaasaütlev' käändel mitmuses?",
         "choices": ["-tes/-des/-es", "-tega/-dega/-ega", "-teta/-deta/-eta", "-tel/-del/-el"],
         "answer": "-tega/-dega/-ega",
-        "correct": "'-tega/-dega/-ega'"
+        "correct": "'-tega/-dega/-ega'."
     },
 {
-        "name": "Vali õiget käändelõppu",
+        "name": "Vali õige käändelõpp",
         "question": "Mis käändelõpp on 'sisseütlev' käändel mitmuses?",
         "choices": ["-tena/-dena/-ena", "-tele/-dele/-ele", "-tes/-des/-es", "-tesse/-desse/-esse"],
         "answer": "-tesse/-desse/-esse",
-        "correct": "'-tesse/-desse/-esse'"
+        "correct": "'-tesse/-desse/-esse'."
     },
 
 ]
