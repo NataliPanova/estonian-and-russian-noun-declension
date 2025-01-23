@@ -131,7 +131,7 @@ quiz_data = [
         "question": "Мы разговаривали о прошедшем (лете).",
         "choices": ["творительный(кем? чем?)","родительный(кого? чего?)","дательный(кому? чему?)","предложный(о ком? о чём?)"],
         "answer": "предложный(о ком? о чём?)",
-        "correct": "предложный'', sest kui millest räägitakse, kasutatakse предложный käänet koos eessõnaga 'о(об)' \nning küsimus on 'о ком? о чём? (kellest? millest?)'."
+        "correct": "предложный'', sest kui millest räägitakse, kasutatakse предложный käänet koos eessõnaga 'о(об)' \nning küsimus on 'о чём? (millest?)'."
     },
 {
         "name": "Vali õige nimisõna kääne",
@@ -288,71 +288,71 @@ quiz_data2 = [
     {
         "name": "Vali õige nimisõna kääne",
         "question": "Me läheme (ujulasse).",
-        "choices": ["sisseütlev","seesütlev","seestütlev","rajav"],
-        "answer": "sisseütlev",
-        "correct": "'sisseütlev', sest nimisõna käändelõpp on '-sse'."
+        "choices": ["sisseütlev(kellesse? millesse? kuhu?)","seesütlev(kelles? milles? kus?)","seestütlev(kellest? millest? kust?)","rajav( kelleni? milleni?)"],
+        "answer": "sisseütlev(kellesse? millesse? kuhu?)",
+        "correct": "'sisseütlev', sest nimisõna käändelõpp on '-sse' ja küsimus on 'kuhu?' või 'millesee?'."
     },
 {
         "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'majadeni?' ",
-        "choices": ["saav","rajav","alaleütlev", "omastav"],
-        "answer": "rajav",
-        "correct": "'rajav', sest nimisõna käändelõpp on '-ni'."
+        "choices": ["saav(kelleks? milleks?)","rajav(kelleni? milleni?)","alaleütlev(kellele? millele? kuhu?)", "omastav(kelle? mille?)"],
+        "answer": "rajav(kelleni? milleni?)",
+        "correct": "'rajav', sest nimisõna käändelõpp on '-deni'."
     },
 {
         "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'koeraga'? ",
-        "choices": ["kaasaütlev", "saav", "olev", "rajav" ],
-        "answer": "kaasaütlev",
+        "choices": ["kaasaütlev(kellega? millega?)", "saav(kelleks? milleks?)", "olev(kellena? millena?)", "rajav(kelleni? milleni?)" ],
+        "answer": "kaasaütlev(kellega? millega?)",
         "correct": "'kaasaütlev', sest nimisõna käändelõpp on '-ga'."
     },
 {
         "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'raamatut'?",
-        "choices": ["omastav", "nimetav", "osastav", "ilmaütlev"],
-        "answer": "osastav",
+        "choices": ["omastav(kelle? mille?)", "nimetav(kes? mis?)", "osastav(keda? mida?)", "ilmaütlev(kelleta? milleta?)"],
+        "answer": "osastav(keda? mida?)",
         "correct": "'osastav', sest nimisõna käändelõpp on '-t'."
     },
 {
         "name": "Vali õige nimisõna kääne",
         "question": "Ma helistan (sõbrale).",
-        "choices": ["alalütlev", "alaleütlev", "sisseütlev", "kaasaütlev" ],
-        "answer": "alaleütlev",
-        "correct": "'alaleütlev', sest nimisõna käändelõpp on '-le'."
+        "choices": ["alalütlev(kellel? millel? millal? kus?)", "alaleütlev(kellele? millele? kuhu?)", "sisseütlev(kellesse? millesse? kuhu?)", "kaasaütlev(kellega? millega?)" ],
+        "answer": "alaleütlev(kellele? millele? kuhu?)",
+        "correct": "'alaleütlev', sest nimisõna käändelõpp on '-le' ja küsimus on 'kellele?'."
     },
 {
         "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'toolid'?",
-        "choices": ["nimetav", "osastav", "omastav", "olev" ],
-        "answer": "nimetav",
+        "choices": ["nimetav(kes? mis?)", "osastav(keda? mida?)", "omastav(kelle? mille?)", "olev(kellena? millena?)" ],
+        "answer": "nimetav(kes? mis?)",
         "correct": "'nimetav', sest see on mitmuse nimetav käändevorm, mis moodustub ains. om. + d viisil. "
     },
 {
         "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'õpilastena'?",
-        "choices": ["olev", "ilmaütlev", "saav", "kaasaütlev"],
-        "answer": "olev",
-        "correct": "'olev', sest nimisõna käändelõpp on '-na'."
+        "choices": ["olev(kellena? millena?)", "ilmaütlev(kelleta? milleta?)", "saav(kelleks? milleks?)", "kaasaütlev(kellega? millega?)"],
+        "answer": "olev(kellena? millena?)",
+        "correct": "'olev', sest nimisõna käändelõpp on '-tena'."
     },
 {
         "name": "Vali õige nimisõna kääne",
         "question": "Me sõidame läbi (linnade).",
-        "choices": ["alaleütlev", "osastav", "rajav", "omastav" ],
-        "answer": "omastav",
-        "correct": "'omastav', sest see on nimisõna mitmuse omastava käändevorm, mis moodustub ains. os. + te/de viisil."
+        "choices": ["alaleütlev(kellele? millele? kuhu?)", "osastav(keda? mida?)", "rajav(kelleni? milleni?)", "omastav(kelle? mille?)" ],
+        "answer": "omastav(kelle? mille?)",
+        "correct": "'omastav', sest see on nimisõna mitmuse omastava käändevorm, mis moodustub ains. os. + te/de viisil ja küsimus on 'läbi mille?'."
     },
 {
         "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'lugudest'?",
-        "choices": ["saav", "sisseütlev", "seestütlev", "seesütlev"],
-        "answer": "seestütlev",
-        "correct": "'seestütlev', sest nimisõna käändelõpp on '-st'."
+        "choices": ["saav(kelleks? milleks?)", "sisseütlev(kellesse? millesse? kuhu?)", "seestütlev(kellest? millest? kust?)", "seesütlev(kelles? milles? kus?)"],
+        "answer": "seestütlev(kellest? millest? kust?)",
+        "correct": "'seestütlev', sest nimisõna käändelõpp on '-dest'."
     },
 {
         "name": "Vali õige nimisõna kääne",
         "question": "Mis käändes on sõna 'muusikuteks'?",
-        "choices": ["nimetav" ,"saav", "alaleütlev", "olev"],
-        "answer": "saav",
+        "choices": ["nimetav(kes? mis?)" ,"saav(kelleks? milleks?)", "alaleütlev(kellele? millele? kuhu?)", "olev(kellena? millena?)"],
+        "answer": "saav(kelleks? milleks?)",
         "correct": "'saav', sest see on nimisõna mitmuse saava käändevorm, mis moodustub ains. om. + ks viisil."
     },
 {
@@ -390,4 +390,40 @@ quiz_data2 = [
         "answer": "-tesse/-desse/-esse",
         "correct": "'-tesse/-desse/-esse'."
     },
+{
+    "name": "Vali õige käändelõpp",
+    "question": "Mis käändelõpp on 'saav' käändel ainsuses?",
+    "choices": ["-ks", "-st", "-ga", "-lt"],
+    "answer": "-ks",
+    "correct": "'-ks'."
+},
+{
+    "name": "Vali õige käändelõpp",
+    "question": "Mis käändelõpp on 'seesütlev' käändel ainsuses?",
+    "choices": ["-ga", "-st", "-ks", "-s"],
+    "answer": "-s",
+    "correct": "'-s'."
+},
+{
+    "name": "Vali õige käändelõpp",
+    "question": "Mis käändelõpp on 'nimetav' käändel mitmuses?",
+    "choices": ["-teni/-deni/-eni", "-test/-dest/-est", "-d", "-te/-de/-e"],
+    "answer": "-d",
+    "correct": "'-d'."
+},
+{
+    "name": "Vali õige käändelõpp",
+    "question": "Mis käändelõpp on 'alalütlev' käändel ainsuses?",
+    "choices": ["-lt", "-l", "-ga", "-st"],
+    "answer": "-l",
+    "correct": "'-l'."
+},
+{
+    "name": "Vali õige käändelõpp",
+    "question": "Mis käändelõpp on 'olev' käändel mitmuses?",
+    "choices": ["-teke/-deks/-eks", "-teni/-deni/-eni", "-tele/-dele/-ele", "-tesse/-desse/-esse"],
+    "answer": "-teni/-deni/-eni",
+    "correct": "'-teni/-deni/-eni'."
+}
+
 ]
