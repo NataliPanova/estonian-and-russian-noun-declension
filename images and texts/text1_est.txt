@@ -1,1 +1,38 @@
-Tulemas...
+EESTI KEELE KÄÄNDED
+
+Eesti keele käändsõnade käänamistabelid
+[[IMG1]]
+[[IMG2]]
+
+Käändsõna põhivormid:
+• ainsuse nimetav
+• ainsuse omastav
+• ainsuse osastav
+• lühike sisseütlev
+• mitmuse omastav
+• mitmuse osastav
+
+Ainsuse ja mitmuse omastav on aluseks teiste vormide moodustamisel:
+
+• ainsuse omastava alusel moodustatakse:
+→ ainsuse käänded alates pikast sisseütlevast
+→ mitmuse nimetav
+
+• mitmuse omastava alusel moodustatakse:
+→ mitmuse käänded alates sisseütlevast
+
+Sõnade põhivorme leitakse sõnastikust.
+Teised vormid moodustatakse nii: võetakse vajaliku põhivormi tüvi ja lisatakse sellele vormi tunnus, mida soovitakse moodustada. Tunnused on käändsõna vormide tabelites.
+
+[[IMG3]]
+[[IMG4]]
+
+Kui tunnusel on mitu varianti, valitakse sobiv variant põhivormi tunnuse järgi (näiteks naabrite → naabrites, tubade → tubades, õnnelike → õnnelikes).
+
+---Lühike mitmuse osastav---
+
+Lühike mitmuse osastav vorm esineb tavaliselt sõnadel, millel ainsuse osastavas puudub tunnus (Ø). Mitmuse osastava tunnuse variant (e/i/u) sõltub ainsuse osastava vormi viimasest häälikust (a, e, i, u). Kui sõna lõpeb kaashäälikuga, on oluline ka esimese silbi häälik.
+
+Et moodustada lühikest mitmuse osastavat vormi, asendatakse ainsuse osastava viimast hääliku mitmuse osastava tunnusega (näiteks lehte → lehti).
+
+[[IMG5]]

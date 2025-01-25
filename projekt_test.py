@@ -45,9 +45,10 @@ def back_to_previous(current_window, previous_window):
     previous_window.deiconify() #Showing the hidden window
 
 # List of text filenames for each window
-text_files_est = ['text1_est.txt', 'text2_est.txt', 'text6_est.txt', 'text7_est.txt']  # Add more filenames as needed
+text_files_est = ['text1_est.txt', 'text2_est.txt', 'text3_est.txt', 'text6_est.txt', 'text7_est.txt']  # Add more filenames as needed
 
-image_params_est = [ [{'file': '14käänet.png', 'size': (350, 250)}, {'file': '14käänet2.png', 'size': (450, 250)}],
+image_params_est = [ [{'file': '14käänet2.png', 'size': (850, 370)}, {'file': '14käänet3.png', 'size': (850, 380)},{'file': 'mood1.png', 'size': (850, 280)}, {'file': 'mood2.png', 'size': (850, 250)}, {'file': 'mood_os.png', 'size': (850, 170)} ],
+               [{'file': 'os_est.png', 'size': (750, 180)}],
                [{'file': 'om1_est.png', 'size': (750, 180)}, {'file': 'om2_est.png', 'size': (750, 640)}],
                [{'file': 'saav_est.png', 'size': (750, 110)}, {'file': 'rajav_est.png', 'size': (750, 130)}, {'file': 'olev_est.png', 'size': (750, 130)} ],
                [{'file': 'ilma_est.png', 'size': (750, 130)}, {'file': 'kaasa_est.png', 'size': (750, 130)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
