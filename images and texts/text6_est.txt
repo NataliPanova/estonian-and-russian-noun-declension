@@ -1,5 +1,7 @@
-Saav
+SAAV
 Kelleks?  Milleks?
+
+[[IMG1]]
 
 Saav kääne kasutatakse:
 1)Eseme, olendi või nähtuse, kelleks või milleks keegi või miski saab või võib saada:
@@ -17,17 +19,37 @@ Hommikuks tuleb see töö lõpetada.
 Sügiseks saab töö valmis.
 Kevadeks ostan uue mantli.
 
-3)Tegevuse järjekorra jaoks
+3)Tegevuse järjekorra jaoks:
 *esiteks
 *teiseks
 *kolmandaks
 
 
-Rajav
+RAJAV
 Kelleni? Milleni?
+
+[[IMG2]]
 
 *Rajav kääne tähistab piiratud ruumi või aega:
 Mina lähen metsani.
 Tallinnast Tartuni on 205 kilomeetrit.
 Selle inimese sünnist surmani oli möödunud 75 aastat.
 Selles asjas võin ma oodata homseni.
+
+OLEV
+Kellena? Millena?
+
+[[IMG3]]
+
+1) Väljendab olukorda või seisundit, milles ollakse ning kellena või millega keegi või miski tegutseb:
+
+Та töötab arstina.
+Та elas oma elu ära kalamehena.
+Kutsikana oli Muri väga kena koer.
+Meie saadik töötab tehases treialina.
+
+2) Tähistab tingimust, omadust või võrdlust:
+
+Jõudsin esimesena kohale.
+Õppida tuleb noorena.
+Purjekad ujusid merel valgete luikedena.

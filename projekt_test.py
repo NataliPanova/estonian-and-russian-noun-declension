@@ -45,11 +45,12 @@ def back_to_previous(current_window, previous_window):
     previous_window.deiconify() #Showing the hidden window
 
 # List of text filenames for each window
-text_files_est = ['text1_est.txt', 'text2_est.txt', 'text6_est.txt']  # Add more filenames as needed
+text_files_est = ['text1_est.txt', 'text2_est.txt', 'text6_est.txt', 'text7_est.txt']  # Add more filenames as needed
 
 image_params_est = [ [{'file': '14käänet.png', 'size': (350, 250)}, {'file': '14käänet2.png', 'size': (450, 250)}],
-              # [{'file': 'tabel1_rus.png', 'size': (300, 200)}, {'file': 'mitmus.png', 'size': (250, 200)}],
-              # [{'file': 'sugu_rus.png', 'size': (400, 300)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
+               [{'file': 'om1_est.png', 'size': (750, 180)}, {'file': 'om2_est.png', 'size': (750, 640)}],
+               [{'file': 'saav_est.png', 'size': (750, 110)}, {'file': 'rajav_est.png', 'size': (750, 130)}, {'file': 'olev_est.png', 'size': (750, 130)} ],
+               [{'file': 'ilma_est.png', 'size': (750, 130)}, {'file': 'kaasa_est.png', 'size': (750, 130)}]#, {'file': 'img3_2.png', 'coords': (420, 300), 'size': (350, 250)}]
             ]
 
 text_files_rus = ['text1_rus.txt', 'text2_rus.txt', 'text3_rus.txt', 'text4_rus.txt', 'text5_rus.txt', 'text6_rus.txt']  # Add more filenames as needed
