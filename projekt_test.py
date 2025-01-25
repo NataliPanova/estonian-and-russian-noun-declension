@@ -45,7 +45,7 @@ def back_to_previous(current_window, previous_window):
     previous_window.deiconify() #Showing the hidden window
 
 # List of text filenames for each window
-text_files_est = ['test.txt', 'text.txt']  # Add more filenames as needed
+text_files_est = ['text1_est.txt', 'text2_est.txt', 'text6_est.txt']  # Add more filenames as needed
 
 image_params_est = [ [{'file': '14käänet.png', 'size': (350, 250)}, {'file': '14käänet2.png', 'size': (450, 250)}],
               # [{'file': 'tabel1_rus.png', 'size': (300, 200)}, {'file': 'mitmus.png', 'size': (250, 200)}],
