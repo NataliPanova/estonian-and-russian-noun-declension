@@ -3,14 +3,15 @@ Kelleta? Milleta?
 
 [[IMG1]]
 
-Ilmaütlev kääne tähistab olendi, eseme, nähtuse või omaduse puudumist:
-Kõnekeeles lisatakse ka eessõna ilma.
+* Ilmaütlev kääne tähistab olendi, eseme, nähtuse või omaduse puudumist:
+Kõnekeeles lisatakse ka eessõna 'ilma'.
 
 Meie külas on kaks elanikud lehmata.
 Та elab isаtа.
 Uus maja on veel ilma katuseta.
 Temata oli meil igav.
 Ilma kuutа öö on pime.
+
 
 KAASAÜTLEV
 Kellega? Millega?

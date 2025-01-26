@@ -1,57 +1,58 @@
 VÄLISKOHAKÄÄNDED
 Väliskohakääneteks on alale-, alal- ja alaltütlev kääne. Nende ülesanneteks on näidata ruumilisi tunnuseid: suunda, paika ja lähtekohta.
 
+
 ALALEÜTLEV
 Kellele? Millele? Kuhu?
 
 [[IMG1]]
 
-Näitab:
-1) sihtkohta:
+Alaleütlev kääne näitab:
+1) Sihtkohta:
 Sugulased sõitsid Saksamaale.
 Mari sõitis välismaale
 
-2) tähtaega:
+2) Tähtaega:
 Esmaspäevale lükatud koosolek algas kell 8.
 
-3) adressaati:
+3) Adressaati:
 Tädi rääkis onule reisist.
 Mari rääkis Jürile kõik ausalt ära
 
-4) seisundit:
+4) Seisundit:
 Lapse nägu läks naerule, kui vanemad koju jõudsid.
 
-5) kogejat:
+5) Kogejat:
 Isale ei meeldinud kinos nähtud film.
 Mulle meeldib siin elada
 
-6) kedagi/midagi, kellele tegevus on suunatud:
- Lapsed loodavad oma vanematele.
+6) Kedagi/midagi, kellele tegevus on suunatud:
+Lapsed loodavad oma vanematele.
 Ta lootis sõpradele.
 
 
 ALALÜTLEV
-kellel? millel? kus?
+Kellel? Millel? Kus?
 
 [[IMG2]]
 
-Näitab:
-1)asukohta:
+Alaleütlev kääne näitab:
+1) Asukohta:
 Lillevaas oli laual.
 Mari elab juba kolmandat aastat välismaal
 
-2) toimumisaega:
+2) Toimumisaega:
 Reedel toimub ekskursioon.
 Nad sõidavad neljapäeval maale
 
-3) seisundit:
+3) Seisundit:
 Naerul näoga ootas laps vanemaid.
 
-4) omajat:
+4) Omajat:
 Antonil on kaks last.
 Tüdrukul on ilus kleit.
 
-5) vahendit:
+5) Vahendit:
 Vanaisa mängib kitarril keerukaid muusikapalu.
 
 
@@ -60,19 +61,19 @@ Kellelt? Millelt? Kust?
 
 [[IMG3]]
 
-Näitab:
-1) lähtekohta:
+Alaltütlve kääne näitab:
+1) Lähtekohta:
 Lillevaasi võeti laualt ära.
 
-2)Väljendab isikut, kellelt tegevus pärineb:
+2) Isikut, kellelt tegevus pärineb:
 Võta temalt töövihik.
 Sain sõbrannalt uue raamatu.
 
-3) Väljendab omadust või tunnust:
+3) Omadust või tunnust:
 Andres on kasvult väike.
 Olga on välimuselt korralik.
 Sveta on iseloomult rahulik.
 
-4) Väljendab tegevustüüpi:
+4) Tegevustüüpi:
 Karl on elukutselt tuletõrjuja.
 Liina on hariduselt jurist.

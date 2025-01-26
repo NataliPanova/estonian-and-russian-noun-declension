@@ -26,10 +26,10 @@ Pärast sõnade “palju” ja “vähe” tuleb kasutada osastavat käänet mit
 Palju eesti sõpru
 Vähe inimesi
 
-2)Negatiivses lauses:
+2) Negatiivses lauses:
 Mul ei ole kodus niisugust töövihikut
 
-3)Täiendusena mittetäieliku või korduva tegevusega lauses:
+3) Täiendusena mittetäieliku või korduva tegevusega lauses:
 Iga päev ma võtan kooli seda töövihikut kaasa.
 Ema küpsetab pirukat
 
@@ -45,7 +45,7 @@ kasvatama, nõustama, ostma, otsima,
 soovima, sööma, tahtma,
 tervitama, valama, võtma
 
-5)Mõned eessõnad kasutavad osastavat käänet:
+5) Mõned eessõnad kasutavad osastavat käänet:
 *enne - enne tööd
 *pärast - pärast tööd
 

@@ -1,35 +1,32 @@
 SISEKOHAKÄÄNDED
 Sisekohakääneteks on sisse-, sees- ja seestülev kääne. Nende ülesanneteks on näidata ruumilisi tunnuseid: suunda, paika ja lähtekohta.
 
+
 SISSEÜTLEV
 Kellesse? Millesse? Kuhu?
 
 [[IMG1]]
 
-Näitab:
-1) suunda, kuhu minnakse:
-Helju ja Helmut läksid teatrisse.
+Sisseütlev kääne näitab:
+1) Suunda, kuhu minnakse:
+Anna ja Indrek läksid teatrisse.
 Läksime ojasse/ojja ujuma
 Koju tulema
 Tuppa astuma
 
-2) aega:
+2) Aega:
 Proua rääkis reisimuljeid nädalast nädalasse.
 
-3) seisundit:
+3) Seisundit:
 Õpilased jäid mõttesse.
 
-Sisseütleva lõpp '-sse' mõnikord kaob. (Lühivormid on lühemad ja keelt lihtsustatakse aja jooksul. Seetõttu kaovad pikad sõnavormid järk-järgult.)
+Sisseütleva lõpp '-sse' mõnikord kaob.
+Lühivormid on lühemad ja keelt lihtsustatakse aja jooksul. Seetõttu kaovad pikad sõnavormid järk-järgult.
 
-Ma lähen Tallinnasse ≈ Ma lähen Tallinna(-).
-raamatukogusse ≈ raamatukokku( läks raamatukokku)
-peole
-majja
-randa
-poodi
-tundi
-kohta
-
+•Ma lähen Tallinnasse ≈ Ma lähen Tallinna(-).                     •Randa
+•Raamatukogusse ≈ raamatukokku( läks raamatukokku)      •Poodi
+•Peole                                                                               •Tundi
+•Majja                                                                               •Kohta
 
 
 SEESÜTLEV
@@ -37,20 +34,18 @@ Kelles? Milles? Kus?
 
 [[IMG2]]
 
-Näitab:
-1) kohta, kus ollakse:
-Helju ja Helmut olid teatris.
+Seesütlev kääne näitab:
+1) Kohta, kus ollakse:
+Anna ja Indrek olid teatris.
 Elan ilusas majas
 
-2) aega:
+2) Aega:
 Septembris algab kool.
 Juulikuus palka ei saa.
 
-
-3) seisundit:
+3) Seisundit:
 Õpilased olid rõõmsas tujus.
 Kas sa oled selles kindel?
-
 
 
 SEESTÜTLEV
@@ -58,27 +53,27 @@ Kellest? Millest? Kust?
 
 [[IMG3]]
 
-Näitab:
-1) kohta, kust väljutakse, lahkutakse
-Helju ja Helmut lahkusid teatrist.
+Seestütlev kääne näitab:
+1) Kohta, kust väljutakse, lahkutakse
+Anna ja Indrek lahkusid teatrist.
 Tulin linnast
 
-2)algusaega:
+2) Algusaega:
 Õpilased ootasid õpetajat lõunast õhtuni.
 
-3)seisundit:
+3) Seisundit:
 Minestusest toibumine võttis aega.
 
-4) võrdlusalust:
+4)Võrdlusalust:
 Poeg oli tütrest lühem.
 Naine oli mehest pikem
 
-5) materjali:
+5) Materjali:
 Plastmassist toolid olid tänavale asetatud.
 puust mänguasjad
 
-6) kellest või millest midagi tuleb või saab:
+6) Kellest või millest midagi tuleb või saab:
 Tütrest saab arst.
 
-7) põhjust:
+7) Põhjust:
 Jalad olid külmast kanged.
