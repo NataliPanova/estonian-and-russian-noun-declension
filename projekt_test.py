@@ -8,10 +8,6 @@ import os
 import sys
 
 #Function to get the path
-#def resource_path(relative_path):
-  #  base_path = os.path.abspath("images and texts") #Path for images and texts
-  #  return os.path.join(base_path, relative_path)
-
 def resource_path(relative_path):
     #Check if the local path exists (to work on your PC)
     local_path = os.path.abspath(relative_path)
@@ -22,7 +18,7 @@ def resource_path(relative_path):
     try:
         base_path = sys._MEIPASS
     except AttributeError:
-        base_path = os.path.abspath(".")  # Резервный случай
+        base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
 
 root_main = tk.Tk()
