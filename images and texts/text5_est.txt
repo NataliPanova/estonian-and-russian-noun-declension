@@ -10,14 +10,14 @@ Kellele? Millele? Kuhu?
 Alaleütlev kääne näitab:
 1) Sihtkohta:
 Sugulased sõitsid Saksamaale.
-Mari sõitis välismaale
+Mari sõitis välismaale.
 
 2) Tähtaega:
 Esmaspäevale lükatud koosolek algas kell 8.
 
 3) Adressaati:
 Tädi rääkis onule reisist.
-Mari rääkis Jürile kõik ausalt ära
+Mari rääkis Jürile kõik ausalt ära.
 
 4) Seisundit:
 Lapse nägu läks naerule, kui vanemad koju jõudsid.
@@ -39,11 +39,11 @@ Kellel? Millel? Kus?
 Alaleütlev kääne näitab:
 1) Asukohta:
 Lillevaas oli laual.
-Mari elab juba kolmandat aastat välismaal
+Mari elab juba kolmandat aastat välismaal.
 
 2) Toimumisaega:
 Reedel toimub ekskursioon.
-Nad sõidavad neljapäeval maale
+Nad sõidavad neljapäeval maale.
 
 3) Seisundit:
 Naerul näoga ootas laps vanemaid.
