@@ -10,7 +10,7 @@ Kellesse? Millesse? Kuhu?
 Sisseütlev kääne näitab:
 1) Suunda, kuhu minnakse:
 Anna ja Indrek läksid teatrisse.
-Läksime ojasse/ojja ujuma
+Läksime ojasse/ojja ujuma.
 Koju tulema
 Tuppa astuma
 
@@ -37,7 +37,7 @@ Kelles? Milles? Kus?
 Seesütlev kääne näitab:
 1) Kohta, kus ollakse:
 Anna ja Indrek olid teatris.
-Elan ilusas majas
+Elan ilusas majas.
 
 2) Aega:
 Septembris algab kool.
@@ -54,9 +54,9 @@ Kellest? Millest? Kust?
 [[IMG3]]
 
 Seestütlev kääne näitab:
-1) Kohta, kust väljutakse, lahkutakse
+1) Kohta, kust väljutakse, lahkutakse:
 Anna ja Indrek lahkusid teatrist.
-Tulin linnast
+Tulin linnast.
 
 2) Algusaega:
 Õpilased ootasid õpetajat lõunast õhtuni.
@@ -66,11 +66,11 @@ Minestusest toibumine võttis aega.
 
 4)Võrdlusalust:
 Poeg oli tütrest lühem.
-Naine oli mehest pikem
+Naine oli mehest pikem.
 
 5) Materjali:
 Plastmassist toolid olid tänavale asetatud.
-puust mänguasjad
+Puust mänguasjad
 
 6) Kellest või millest midagi tuleb või saab:
 Tütrest saab arst.

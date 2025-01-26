@@ -5,15 +5,13 @@ Kelleks?  Milleks?
 
 Saav kääne kasutatakse:
 1) Eseme, olendi või nähtuse, kelleks või milleks keegi või miski saab või võib saada:
-
 Sõja ajal sai ta ohvitseriks.
 Poiss kasvas suureks.
 Soo muutus põlluks.
 Meie tarvitame toiduks aedvilja.
 
 2) Aja koguse või piiri määratlemiseks mingisuguse tegevuse puhul:
-
-Та läks õppima kaheks aastaks..
+Та läks õppima kaheks aastaks.
 Sõitsime kolhoosi kolmeks päevaks.
 Hommikuks tuleb see töö lõpetada.
 Sügiseks saab töö valmis.
@@ -44,14 +42,12 @@ Kellena? Millena?
 
 Olev kääne näitab:
 1) Olukorda või seisundit, milles ollakse ning kellena või millega keegi või miski tegutseb:
-
 Та töötab arstina.
 Та elas oma elu ära kalamehena.
 Kutsikana oli Muri väga kena koer.
 Meie saadik töötab tehases treialina.
 
 2) Tingimust, omadust või võrdlust:
-
 Jõudsin esimesena kohale.
 Õppida tuleb noorena.
 Purjekad ujusid merel valgete luikedena.

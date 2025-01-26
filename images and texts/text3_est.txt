@@ -5,7 +5,7 @@ Keda? Mida?
 
 Osastavat käänet kasutatakse:
 1)Iga arvsõnaga (täisarvuline, osaarvuline, positiivne, negatiivne), välja arvatud üks:
-Siin riiulil on kakskümmend kaheksa töövihikut
+Siin riiulil on kakskümmend kaheksa töövihikut.
 
 •Sõnaga "mitu" (olenemata määratud arvust).
 Mitu päeva on nädalas?
@@ -27,11 +27,11 @@ Palju eesti sõpru
 Vähe inimesi
 
 2) Negatiivses lauses:
-Mul ei ole kodus niisugust töövihikut
+Mul ei ole kodus niisugust töövihikut.
 
 3) Täiendusena mittetäieliku või korduva tegevusega lauses:
 Iga päev ma võtan kooli seda töövihikut kaasa.
-Ema küpsetab pirukat
+Ema küpsetab pirukat.
 
 Kasutatakse mõne sõnadega:
 •Iga päev     •Harva
