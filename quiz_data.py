@@ -420,7 +420,7 @@ quiz_data2 = [
 },
 {
     "name": "Vali õige käändelõpp",
-    "question": "Mis käändelõpp on 'olev' käändel mitmuses?",
+    "question": "Mis käändelõpp on 'rajav' käändel mitmuses?",
     "choices": ["-teke/-deks/-eks", "-teni/-deni/-eni", "-tele/-dele/-ele", "-tesse/-desse/-esse"],
     "answer": "-teni/-deni/-eni",
     "correct": "'-teni/-deni/-eni'."
